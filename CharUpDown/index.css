@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+}
+.HaiNamDepTrai {
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,0.6));
+}
+.HaiNamDepTrai span{
+    position: relative;
+    display: inline-block;
+    color: blanchedalmond;
+    font-size: 3em;
+    text-transform: uppercase;
+    animation: ani 8.1s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+@keyframes ani{
+    0%{
+        transform: translateY(10px);
+    }
+    20%{
+        transform: translateY(-180px);
+        color: rgb(21, 255, 0);
+    }
+    60%{
+        transform: translateY(20px);
+    }
+    80%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
