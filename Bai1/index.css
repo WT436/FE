@@ -264,7 +264,7 @@ margin-right: 20px;
     border: 2px solid rgb(31, 30, 30);
 }
 ::-webkit-scrollbar{
-    width: 0;;
+    width: 0;
 }
 #scrollpath{
     position: fixed;
