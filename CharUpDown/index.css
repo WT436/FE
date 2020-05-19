@@ -33,9 +33,11 @@ body{
     }
     60%{
         transform: translateY(20px);
+        color: rgb(204, 0, 255);
     }
     80%{
         transform: translateY(-10px);
+        color: rgb(255, 0, 0);
     }
     100%{
         transform: translateY(0px);
