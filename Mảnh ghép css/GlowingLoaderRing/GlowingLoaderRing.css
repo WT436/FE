@@ -43,12 +43,14 @@ body{
 {
     content: '';
     position: absolute;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: 10px solid #ffffff;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
     background: #fff;
     top: -1px;
     right: 150px;
+    animation: ani1 5s linear infinite;
 }
 .load .face.face1{
 top: 0;
@@ -58,16 +60,16 @@ right: 0;
 background: #09090900;
 border-radius: 50%;
 box-shadow: 0 0 10px rgba(0,0,0,1);
-border-left: 2px solid red;
-border-top: 2px solid red;
-animation: ani1 1s linear infinite;
+border-left: 4px solid rgb(225, 0, 255);
+border-top: 4px solid rgb(225, 0, 255);
+animation: ani1 6s linear infinite;
 }
 .load .face.face1 .circle
 {
     transform: rotate(-45deg);
 }
 .load .face.face1 .circle::before
-{   top: 0px;
+{   top: 20px;
     right: 320px;
     background: red;
     box-shadow: 0 0 20px rgba(255, 0, 0, 0.7),0 0 60px rgba(255, 0, 0, 0.5) ,0 0 100px rgba(255, 0, 0, 0.3);
@@ -88,9 +90,9 @@ animation: ani1 1s linear infinite;
     background: #09090900;
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0,0,0,1);
-    border-right: 2px solid rgb(229, 255, 0);
-    border-top: 2px solid rgb(229, 255, 0);
-    animation: ani2 0.5s linear reverse infinite;
+    border-right: 4px solid rgb(255, 0, 0);
+    border-top: 4px solid rgb(255, 0, 0);
+    animation: ani2 5s linear reverse infinite;
     }
 
     .load .face.face2 .circle
@@ -102,7 +104,7 @@ animation: ani1 1s linear infinite;
     .load .face.face2 .circle::before
     {   
         top: -210px;
-        right: 450px;
+        right: 470px;
         background: rgb(229, 255, 0);
         box-shadow: 0 0 20px rgb(229, 255, 0.7),0 0 40px rgb(229, 255, 0.5) ,0 0 60px rgb(229, 255, 0.3);
     }
@@ -123,22 +125,21 @@ animation: ani1 1s linear infinite;
         right: 100px;
         background: #09090900;
         border-radius: 50%;
-        border-right: 2px solid blue;
-        border-top: 2px solid blue;
-        animation: ani3 0.3s linear  infinite;
+        border-right: 4px solid rgb(72, 255, 0);
+        border-top: 4px solid rgb(72, 255, 0);
+        animation: ani3 4s linear  infinite;
         }
     
         .load .face.face3 .circle
-        {
-            
+        {            
             transform: rotate(-45deg);
         }
         
         
         .load .face.face3 .circle::before
         {   
-            top: 135px;
-            right: 330px;
+            top: 132px;
+            right: 350px;
             background: blue;
             box-shadow: 0 0 20px blue,0 0 40px blue ,0 0 60px blue;
         }
