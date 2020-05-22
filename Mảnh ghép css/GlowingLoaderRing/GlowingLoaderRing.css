@@ -50,7 +50,7 @@ body{
     background: #fff;
     top: -1px;
     right: 150px;
-    animation: ani1 5s linear infinite;
+    animation: ani1 2s linear infinite;
 }
 .load .face.face1{
 top: 0;
