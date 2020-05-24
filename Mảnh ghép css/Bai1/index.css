@@ -766,49 +766,540 @@ z-index: -1;
         .hainamulfooter li:nth-child(7) span{
             background: #cd201f;
         }
-        .conMeoKeuContainer{
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            width: 60%;
-        }
-        .conMeoKeuContainer p{
-            color: rgb(94, 255, 0);
-            font-size: 30px;
-            font-weight: 500;
-            margin-bottom: 5px;
-        }
         
-        .conMeoKeuContainer label{
+        .Nong_Nong_Nong{
+            width: 100%;
+            height: 100px;
+            margin-top: 50px;
             position: relative;
+            float: left;
         }
-        .conMeoKeuContainer label input{
-            appearance: none;
-            -webkit-appearance: none;
-            cursor: pointer;
+        .Kon_Moe_Lo_Nong_Vcl{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            display: flex;
+            margin: 0;
+            padding: 0;
+            background: #484863;
+            border-radius: 25px;
         }
-        .conMeoKeuContainer label .fa{
-            position: relative;
+        .Kon_Moe_Lo_Nong_Vcl>li{
+        list-style: none;
+        }
+        .Kon_Moe_Lo_Nong_Vcl>li>a{
+            display: block;
             width: 40px;
             height: 40px;
-            background: #091921;
-            line-height: 40px;
             text-align: center;
-            margin: 0 4px;
-            color: #6f6f6f;
-            font-size: 16px;
-            border-radius: 50%;
-            box-shadow: -1px -1px 3px rgba(214, 56, 56, 0.568),2px 2px 6px rgba(61, 206, 85, 0.8);
+            line-height: 40px;
+            background: rgb(12, 189, 243);
+            color: #262626;
+            text-decoration: none;
+            border-radius: 4px;
+            margin: 5px;
+            box-sizing: inherit 0 5px 10px rgba(0,0,0,0.1) , 0 2px 5px rgba(0,0,0,0.6) ;
         }
-        .conMeoKeuContainer label .fa:hover{
-            box-shadow: -1px -1px 3px rgba(255,255,255,0.05),2px 2px 6px rgba(0,0,0,0.8),
-                       inset -2px -2px 3px rgba(255,255,255,0.1),inset 2px 2px 10px rgba(0,0,0,0.5);
+        .Kon_Moe_Lo_Nong_Vcl>li:first-child a{
+            border-radius: 20px 0 0 20px;
         }
-        .conMeoKeuContainer label input:checked ~ .fa{
-                color: #00ffd5;
-                box-shadow: inset -1px -1px 3px rgba(214, 56, 56, 0.568),
-                           inset 2px 2px 6px rgba(61, 206, 85, 0.8);
-                text-shadow: 0 0 5px rgb(12, 212, 202),0 0 20px rgb(12, 212, 202);
+        .Kon_Moe_Lo_Nong_Vcl>li:last-child a{
+            border-radius: 0 20px  20px 0;
+        }
+        .Kon_Moe_Lo_Nong_Vcl>li>a:hover{
+            background: rgb(43, 255, 0);
+        }
+        @media screen and ( max-width: 800px)  {  
+            .BeginPage{
+                width: 100%;
+                height: 15rem;
+            }
+            .logo{
+                font-size:100%;
+                width: 10%;
+                margin-left:20px;
+            }
+            .Wt{
+                font-size:280%;
+            }
+            .menu>ul li a{
+                padding: 6px;
+                font-size: 9px;
+            }  
+            .clo{
+                width: 60%;
+                float: left;
+                margin-left: 15%;
+               margin-top: -20px;
+            }
+            .clo h2{        
+                letter-spacing: 0.3em;
+                font-size: 1em;   
+            }
+            .clo #time div span{       
+                width: 70px;
+                height: 50px;      
+                font-size: 2em;     
+            }  
+            .Search-box{   
+            top:1em;
+            height: 30px;
+            border-radius: 20px;
+            }
+            .search-btn{
+                width: 30px;
+                height: 30px;
+            }
+            .textsearch{
+                font-size: 13px;
+                line-height: 30px;
+                width: 0px;
+            }
+            .menuBaiViet{
+                margin: 0 10%;
+                width: 87%;
+                float: left;
+                height: 7em;
+                margin-top: 30px;
+            }
+            .ThanhAvata{
+             height: 100%;
+             width: 7%;
+             float: left;
+            }
+            .nameAll{
+                height: 1.5em;
+                width: 100%;
+                float: left; 
+                font-size: 90%;
+            }
+            .Baiviet>a{
+            font-size: 90%;
+            margin-left:10px;
+            }
+            .Chude{
+                width: 100%;
+                height: 1.5em; 
+                margin-left:10px;
+            }
+            .ThanhAvata>img{
+                background-color: red;
+                height: 30px;
+                width: 30px;
+                float: left;
+                border-radius: 100%;
+                border: 2px solid rgb(31, 30, 30);
+            }
+            .btnTen{
+                font-size: 10px;
+               }
+            .box{
+                position: relative;
+                width: 100px;
+                height: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 40px;
+                background: #060c21;
+                transition: 0.5s;
+            }
+            .box:hover{
+                height: 200px;
+            }
+            .box .imgBox{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+            }
+            
+            .box .imgBox img{
+            max-width: 100%;
+            opacity: 0.1;
+            transition: 0.5s;
+            }
+            .box:hover .imgBox img{
+                opacity: 1;
+            }
+            .namdeptraiwowowfooter{
+                width: 100%;
+                height: auto;
+                margin-top: 0;
+            }
+                .box .content{
+                  position: absolute;
+                  bottom: 0;
+                  left: 10px;
+                  right: 10px;
+                  bottom: 0px;
+                  height: 90px;
+                  background: rgba(0, 0, 0, 0.4);
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  opacity: 0;
+                  text-align: center;
+                  transition: 0.5s;
+                }
+                .box:hover .content h2{
+                    font-size: 10px;
+                    color: seashell;
+                    font-weight: 500;
+                    line-height: 10px;
+                    letter-spacing: 1px;
+                  }
+                  .box:hover .content h2 span{
+                    font-size: 10px;
+                    color: seashell;
+                    font-weight: 100;
+                    letter-spacing: 1px;
+                  }
+                  #buttonbalala{
+                    padding: 5px 20px;
+                    margin: 20px 0;
+                    color: rgb(79, 231, 8);
+                    font-size: 10px;
+                    }
+                    #buttonbalala>span{
+                        position: absolute;
+                        display: block;
+                    }
+                    /*----------------------------------*/
+                    #ketnoinhe{
+                        width: 70%;
+                        float: left;
+                        margin-top: 5%;
+                    }
+                    .hainamulfooter li
+                    {
+                        position: relative;
+                        list-style: none;
+                        width: 20px;
+                        height: 20px;
+                        margin: 0 10px;
+                        transform: rotate(-30deg) skew(25deg);
+                        background: #ccc;
+                    }
+                    
+                    .hainamulfooter li span{
+                        transition: 0.5s;
+                        display: flex !important;
+                        font-size: 10px !important;
+                    }
+        
+                    
+                    .Nong_Nong_Nong{
+                        height: 60px;
+                        margin-top: 20px;
+                    }
+                    .Kon_Moe_Lo_Nong_Vcl{
+                        border-radius: 25px;
+                    }
+        
+                    .Kon_Moe_Lo_Nong_Vcl>li>a{
+                        width: 20px;
+                        height: 20px;
+                        line-height: 20px;
+                        border-radius: 4px;
+                        margin: 3px;
+                    }
+            
+        }
+        @media screen and ( max-width: 1200px) and ( min-width: 1000px) {
+            .logo{
+                font-size:150%;
+                width: 10%;
+                font-family: cursive;
+                float:left;
+                color: rgb(47, 73, 219);
+                margin-left:20px;
+                text-align:center;
+            }
+            .Wt{
+                font-size:320%;
+                font-family: cursive;
+                color: rgba(91, 81, 230, 0.548);
+            }
+            /*-----------------------------------------------------------------------*/
+            .menu ul{
+                padding: 0;
+                margin-left: 4%;
+                text-align: center;
+                width: 60%;
+                float: left;
+                display: flex; 
+                font-family: sans-serif;     
+            }
+            .menu>ul li a{
+                display: flex;
+                position: relative;
+                text-decoration: none;
+                padding: 15px;
+                font-size: 14px;
+                font-family: serif;
+                color: rgb(8, 8, 8);
+                transform: 1.5s;
+            }
+            .HaiNamDepTrai>span{
+                position: relative;
+                display: inline-block;
+                color: blanchedalmond;
+                font-size: 15px;
+                text-transform: uppercase;
+                animation: aniHaiNamDepTrai 4.1s ease-in-out infinite;
+                animation-delay: calc(0.1s * var(--i));
+            }
+            
+            .clo{
+                width: 50%;
+                margin-left: 26%;/**/
+                margin-top: -59px;/**/
+            }
+            .clo h2{
+                position: relative;
+                display: block;
+                color: rgb(3, 3, 3);
+                align-items: center;
+                font-weight: 400;
+                text-transform: uppercase;
+                letter-spacing: 0.4em;
+                font-size: 1.1em;
+                width: 100%;    
+            }
+            .clo #time div span{
+                position: relative;
+                display: block;
+                width: 90px;
+                height: 80px;
+                background: rgb(12, 101, 104);
+                color: aliceblue;
+                font-weight: 280;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 2em;
+                z-index: 4;
+                box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.171);
+            }
+            .nameAll{
+                height: 1.2em;/**/
+                width: 100%;
+                float: left; 
+            }
+            .name{
+                width: 20%;
+                height: 100%;
+                float: left;
+                text-align: center;
+            }
+        
+            .Baiviet>a{
+            color:  black;
+            font-family: 'Times New Roman', Times, serif; 
+            font-size: 120%;
+            margin-left:10px;
+            text-decoration: none;
+            }
+            .btnTen{
+             border-radius: 4px;
+             font-size: 60%;
+             background-color: darkmagenta;
+             color: white;
+             text-align: center;
+             border: none;
+            }
+        
+            .ThanhChon{
+            float: left;
+            margin-top: 9px;/**/
+            height: 1.4em;
+            width: 100%;
+            }
+            .ThanhAvata>img{
+                background-color: red;
+                height: 40px;
+                width: 40px;/**/
+                float: left;
+                border-radius: 100%;
+                border: 2px solid rgb(31, 30, 30);
+            }     
+        }
+        @media screen and ( max-width: 1000px) and ( min-width: 800px) {
+            .logo{
+                font-size:120%;
+                width: 10%;
+                font-family: cursive;
+                float:left;
+                color: rgb(47, 73, 219);
+                margin-left:20px;
+                text-align:center;
+            }
+            .Wt{
+                font-size:250%;
+                font-family: cursive;
+                color: rgba(91, 81, 230, 0.548);
+            }
+            /*-----------------------------------------------------------------------*/
+            .menu ul{
+                padding: 0;
+                margin-left: 4%;
+                text-align: center;
+                width: 60%;
+                float: left;
+                display: flex; 
+                font-family: sans-serif;     
+            }
+            .btnTen{
+               font-size: 13px;
+               }
+            .menu>ul li a{
+                display: flex;
+                position: relative;
+                text-decoration: none;
+                padding: 8px;
+                font-size: 12px;
+                font-family: serif;
+                color: rgb(8, 8, 8);
+                transform: 1.5s;
+            }  
+            /*****************************************************/       
+            /*---------------------------------------------------*/
+        
+            .HaiNamDepTrai>span{
+                position: relative;
+                display: inline-block;
+                color: blanchedalmond;
+                font-size: 13px;
+                text-transform: uppercase;
+                animation: aniHaiNamDepTrai 4.1s ease-in-out infinite;
+                animation-delay: calc(0.1s * var(--i));
+            }
+            /*****************************************************/
+            /*---------------------------------------------------*/
+            .clo{
+                width: 50%;
+                margin-left: 22%;/**/
+                margin-top: -29px;/**/
+            }
+            .clo h2{
+                position: relative;
+                display: block;
+                color: rgb(3, 3, 3);
+                align-items: center;
+                font-weight: 400;
+                text-transform: uppercase;
+                letter-spacing: 0.35em;
+                font-size: 1em;
+                width: 100%;    
+            }
+            .clo #time div span{
+                position: relative;
+                display: block;
+                width: 80px;
+                height: 70px;/**/
+                background: rgb(12, 101, 104);
+                color: aliceblue;
+                font-weight: 280;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.5em;
+                z-index: 4;
+                box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.171);
+            }
+        
+            /*****************************************************/
+            .menuNav{
+                   margin-left: 25%;
+                   width: 50%;
+                   float: left;
+               }
+            .menuBaiViet{
+                margin: 0 10%;
+                width: 87%;
+                float: left;
+                height: 7em;
+                margin-top: 30px;
+            }
+            .ThanhAvata{
+             height: 100%;
+             width: 6%;
+             float: left;
+             text-align: center;
+            }
+            .nameAll{
+                height: 1.1em;/**/
+                width: 100%;
+                float: left; 
+            }
+            .name{
+                width: 25%;/**/
+                height: 100%;
+                float: left;
+                text-align: center;
+            }
+            .Baiviet{
+                width: 100%;
+                height: 3.5em;    
+            }
+            .Baiviet>a{
+            color:  black;
+            font-family: 'Times New Roman', Times, serif; 
+            font-size: 120%;/**/
+            margin-left:10px;
+            text-decoration: none;
+            }
+            .Chude{
+                width: 100%;
+                height: 1.5em; 
+                margin:7px;
+                text-decoration: none; 
+            }
+            .ThanhChon{
+            float: left;
+            margin-top: 7px;/**/
+            height: 1.4em;
+            width: 100%;
+            }
+            .baiVietBottom{
+                float: left;
+                margin: 15px;
+                width: 100%;
+            }
+            .ThanhAvata>img{
+                background-color: red;
+                height: 40px;
+                width: 40px;/**/
+                float: left;
+                border-radius: 100%;
+                border: 2px solid rgb(31, 30, 30);
+            }
+            #NamDepTrai{
+                position: fixed;
+                top: 0;
+                right: 0;
+                width: 10px;
+                background: linear-gradient(to top,#008aff,#00ffe7);
+                animation: animate 5s linear infinite;
+                border-radius: 10px;
+            }        
+            .box{
+                position: relative;
+                width: 200px;
+                height: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 30px;
+                background: #060c21;
+                transition: 0.5s;
+            }
+            .box:hover{
+                height: 300px;
+            }  
         }
