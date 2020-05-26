@@ -1,0 +1,88 @@
+
+.chacVayKhongBuonNua{
+    display:block;
+    margin:5%;
+    width: 90%;
+    height:auto;
+    position: relative;
+}
+.mb-0>img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.btn-link{
+    float: right;
+    font-size: 36px;
+}
+.btn-link>li{
+    font-size: 36px;
+}
+.mb-0>b{
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ margin:0 10px;
+ font-size: 20px;
+}
+.mb-0>i{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin:0 10px;
+    font-size: 12px;
+   }
+.chacvaynhapvaoday{
+width: 100%;
+border: 1px rgb(29, 134, 134) solid;
+font-size: 18px;
+font-family: initial ;
+}
+*{box-sizing: border-box;}
+.buttonNamDepTrai{
+    border: none;
+    display: block;
+    position: relative;
+    padding: 1% 3%;
+    font-size: 15px;
+    background: transparent;
+    cursor: pointer;
+    user-select: none;
+    overflow: hidden;
+    margin: 10px 40%;
+}
+.buttonNamDepTrai span{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: -1;
+    border: 3px solid royalblue;
+    border-radius: 6px;
+    color: royalblue;
+}
+.buttonNamDepTrai span::before
+{
+    content: ' ';
+    position: absolute;
+    width: 8%;
+    height: 500%;
+    background: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-60deg);
+    transition: all 0.3s;
+}
+.buttonNamDepTrai:hover span::before , .buttonNamDepTrai:focus span::before
+{
+    transform: translate(-50%,-50%) rotate(-90%);
+    width: 100%;
+    background: royalblue;
+}
+.buttonNamDepTrai:hover , .buttonNamDepTrai:focus{
+    color: rgb(255, 255, 255);
+}
+.NameComment{
+ margin: 15px;
+}
+.baivietcuatoi{
+    margin: 0 5%;
+}
