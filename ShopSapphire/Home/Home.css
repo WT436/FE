@@ -1,0 +1,692 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+#scrollpath {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+#NamDepTrai {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 7px;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    animation: animate 5s linear infinite;
+    border-radius: 0 0 10px 10px;
+}
+
+@keyframes animate {
+    0%,
+    100% {
+        filter: hue-rotate(0deg);
+    }
+    50% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+#NamDepTrai:before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(30px);
+}
+
+#NamDepTrai:after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(30px);
+}
+
+.navMenuTopHome {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 100px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    background: #79d1fa73;
+    z-index: 1000;
+}
+
+.navMenuTopHome>.logo {
+    float: left;
+}
+
+.navMenuTopHome>.logo>img {
+    float: left;
+    height: 80px;
+    width: 240px;
+    transition: 0.5s;
+}
+
+.black>.logo>img {
+    float: left;
+    height: 60px;
+    width: 180px;
+    transition: 0.5s;
+}
+
+.navMenuTopHome>ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navMenuTopHome>ul>li {
+    margin: 0 10px;
+    list-style: none;
+}
+
+.navMenuTopHome>ul>li>a {
+    line-height: 30px;
+    padding: 1px 10px;
+    margin-top: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: 1px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+    transform: 0.5s;
+    background-color: rgba(255, 255, 255, 0.479);
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    transition: 0.5s;
+}
+
+.black>ul>li>a {
+    color: black;
+}
+
+.navMenuTopHome>ul>li>a.active {
+    color: lightblue;
+    background: rgb(119, 5, 5);
+}
+
+.navMenuTopHome>ul>li>a:hover {
+    background: rgb(79, 231, 8);
+    color: #050801;
+    box-shadow: 0 0 5px rgb(79, 231, 8), 0 0 10px rgb(79, 231, 8), 0 0 15px rgb(79, 231, 8), 0 0 250px rgb(79, 231, 8);
+}
+
+.black {
+    background: #79d1fa;
+    height: 80px;
+    padding: 10px 50px;
+}
+
+.sub-menu-1 {
+    display: none;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.navMenuTopHome>ul>li:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    background: rgba(124, 121, 121, 0.801);
+    margin-left: -15px;
+    margin-top: -10px;
+}
+
+.navMenuTopHome>ul>li:hover .sub-menu-1 ul {
+    display: block;
+    margin: 10px;
+}
+
+.navMenuTopHome>ul>li:hover .sub-menu-1 ul li {
+    width: 100px;
+    padding: 10px 0;
+    list-style: none;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: center;
+    margin-left: -40px;
+}
+
+.navMenuTopHome>ul>li:hover .sub-menu-1 ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.navMenuTopHome>ul>li:hover .sub-menu-1 ul li:last-child {
+    border-bottom: none;
+}
+
+.navMenuTopHome>ul>li:hover .sub-menu-1 ul li:hover {
+    background: rgb(171, 245, 226);
+    color: rgb(0, 0, 0);
+}
+
+.navMenuTopHome>ul>li>a:nth-child(1) {
+    filter: hue-rotate(60deg);
+}
+
+.navMenuTopHome>ul>li>a span {
+    position: absolute;
+    display: block;
+}
+
+.navMenuTopHome>ul>li>a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgb(227, 6, 247));
+    animation: ani1 1s linear infinite;
+}
+
+@keyframes ani1 {
+    0% {
+        left: -100%;
+    }
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.navMenuTopHome>ul>li>a span:nth-child(2) {
+    top: 100%;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, rgb(255, 123, 0));
+    animation: ani2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes ani2 {
+    0% {
+        top: -100%;
+    }
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.navMenuTopHome>ul>li>a span:nth-child(3) {
+    right: -100%;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(180deg, transparent, rgb(0, 255, 0));
+    animation: ani3 1s linear infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes ani3 {
+    0% {
+        right: -100%;
+    }
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.navMenuTopHome>ul>li>a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, rgb(25, 0, 255));
+    animation: ani4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes ani4 {
+    0% {
+        bottom: -100%;
+    }
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+
+/* nut bam mo menu trong che do mobile*/
+
+.checkNavCenter {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.checkNavCenter>input[type="checkbox"] {
+    position: relative;
+    width: 60px;
+    height: 30px;
+    -webkit-appearance: none;
+    background: linear-gradient(0deg, #333, #000);
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px rgba(0, 0, 0, 1), 0 5px 20px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.checkNavCenter>input:checked[type="checkbox"] {
+    background: linear-gradient(0deg, #79d1fa, #4cbff5);
+    box-shadow: 0 0 8px #6dd1ff, 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px rgba(0, 0, 0, 1), 0 5px 20px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.checkNavCenter>input[type="checkbox"]:before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(0deg, #000, #6b6b6b);
+    border-radius: 20px;
+    box-shadow: 0 0 0 1px #232323;
+    transform: scale(0.98, 0.96);
+    transition: 0.5s;
+}
+
+.checkNavCenter>input:checked[type="checkbox"]::before {
+    left: 20px;
+}
+
+.checkNavCenter>input[type="checkbox"]:after {
+    content: ' ';
+    position: absolute;
+    top: calc(50% - 2px);
+    left: 30px;
+    width: 4px;
+    height: 4px;
+    background: linear-gradient(0deg, #6b6b6b, #000);
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.checkNavCenter>input:checked[type="checkbox"]::after {
+    background: #63cdff;
+    left: 50px;
+    box-shadow: 0 0 5px #13b3ff, 0 0 25px #13b3ff;
+}
+
+
+/****************************************************************************************************/
+
+
+/*thanh truowt caroseol*/
+
+.carousel {
+    margin: 0px 0.5%;
+    width: 99%;
+    height: auto;
+    display: block;
+}
+
+.carousel-item>img {
+    width: 100%;
+    height: 90vh;
+}
+
+.slide>ol>li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+.slide>ol>.active {
+    background-color: #79d1fa;
+    box-shadow: inset 0 0 0 2px #fff;
+}
+
+
+/****************************************************************************************************/
+
+
+/*o tim kiem */
+
+.Search-box {
+    position: fixed;
+    top: 8em;
+    right: 1%;
+    transform: translate(-10%, -10%);
+    background: #2f3640;
+    height: 40px;
+    border-radius: 40px;
+    transition: 3s;
+    z-index: 1000;
+}
+
+.search-btn {
+    color: #e84118;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #e8421854;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textsearch {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+}
+
+.Search-box:hover>.textsearch {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.Search-box:hover>.search-btn {
+    background: white;
+}
+
+
+/***************************************************************************************/
+
+
+/*header*/
+
+header {
+    width: 90%;
+    margin: 0em 5%;
+}
+
+
+/***************************************************************************************/
+
+
+/*khung cho san pham */
+
+.KhungSanPham {
+    width: 100%;
+    height: auto;
+    background-color: rgb(253, 253, 253);
+    margin-top: 3em;
+}
+
+.tieudeSanPham {
+    width: 100%;
+    height: 1.5em;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 3px;
+    float: left;
+    margin-left: 1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: block;
+}
+
+.oSanpham {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    float: left;
+    font-size: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.saleProduct {
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid black;
+    padding: 5px 10px;
+}
+
+.PhanTramGuiamGia {
+    float: left;
+    padding: 5px 10px;
+    margin-right: 5%;
+    font-family: sans-serif;
+}
+
+.timeSale {
+    margin: 10px;
+    float: left;
+}
+
+.timeSale>span {
+    padding: 8px 10px;
+    margin: 10px 10px;
+    background: red;
+    color: #000;
+    color: #fff;
+    border-radius: 4px;
+    font-weight: 800;
+}
+
+.DetailProduct {
+    float: right;
+    padding: 5px 40px;
+    margin: 0 10px;
+    border: 1px solid red;
+    background-color: rgba(0, 0, 0, 0);
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+
+.productNow {
+    height: 300px;
+    width: 100%;
+    margin: 10px;
+}
+
+
+/***************************************************************************************/
+
+
+/*sanpham */
+
+.box {
+    position: relative;
+    width: 200px;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #ff4800, #79d1fa00, #424646ef);
+    transition: 0.5s;
+    margin: 20px;
+    float: left;
+}
+
+.box:hover {
+    height: 330px;
+}
+
+.box .imgBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.imgBox>a {
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    opacity: 1;
+}
+
+.box .imgBox img {
+    max-width: 100%;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.box:hover .imgBox img {
+    opacity: 1;
+}
+
+.box:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -1;
+}
+
+.box:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -1;
+    filter: blur(40px);
+}
+
+.box:after,
+.box:before {
+    background: linear-gradient(235deg, #ff4800, #79d1fa, #d40000);
+}
+
+.box .content {
+    position: absolute;
+    bottom: 0px;
+    left: 5px;
+    right: 5px;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    opacity: 0;
+    transition: .1s;
+}
+
+.box:hover .content {
+    opacity: 1;
+}
+
+.giaGoc {
+    text-decoration: line-through;
+    margin: 0 10px;
+}
+
+.SoSaoDaCo>i {
+    color: gold;
+}
+
+.box:hover .content h2 {
+    font-size: 15px;
+    color: seashell;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+.box:hover .content h2 span {
+    font-size: 10px;
+    color: seashell;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+
+/***************************************************************************************/
+
+
+/*footter*/
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: #79d1fa;
+    margin-top: 3em;
+    float: left;
+}
+.footerChinhSach{
+    width: 90%;
+    height: auto;
+    margin: 10px 5%;
+    font-weight: 700;
+    padding-bottom: 2em;
+    border-bottom: 1px solid black;
+}
+.footerChinhSach>span{
+    font-size: 12px;
+}
+.footerChinhSach>span>p{
+    margin-top: 2em;
+    font-size: 17px;
+}
+.footerDayCreateWeb{
+    width: 70%;
+    margin: 10px 15%;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+}
+/***************************************************************************************/
+
+
+/*ip5 */
+@media ce
+
+/***************************************************************************************/
+
+
+/*o tim kiem */
+
+
+/***************************************************************************************/
+
+
+/*o tim kiem */
+
+
+/***************************************************************************************/
+
+
+/*o tim kiem */
+
+
+/***************************************************************************************/
+
+
+/*o tim kiem */
+
+
+/***************************************************************************************/
