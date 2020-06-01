@@ -1,3 +1,4 @@
 {
-    "diffEditor.maxComputationTime": 750
+    "diffEditor.maxComputationTime": 750,
+    "liveServer.settings.port": 5501
 }
