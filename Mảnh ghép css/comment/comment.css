@@ -1,0 +1,44 @@
+.commetProductbox {
+  width: 80%;
+  margin: 20px 5%;
+  padding: 10px 5%;
+  border: 1px solid rgb(252, 249, 249) (252, 249, 249);
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.562);
+}
+.containerComment {
+  width: 100%;
+  height: auto;
+  padding: 5px 5px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+
+.AvataUserComment {
+  width: 5%;
+  float: left;
+  background: red;
+  display: block;
+}
+.AvataUserComment > img {
+  width: 80%;
+  border-radius: 50%;
+  justify-content: center;
+  margin-top: 10px;
+}
+.commentDitaile {
+  width: 90%;
+  display: block;
+  float: right;
+}
+.infoUser {
+  width: 100%;
+  font-size: 17px;
+  float: left;
+}
+.infoUser>div{
+    float: left;
+
+}
