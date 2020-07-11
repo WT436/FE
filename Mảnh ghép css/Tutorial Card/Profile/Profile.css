@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #ff0;
+    font-feature-settings: arial;
+}
+
+.Profile {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 450px;
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, .2);
+}
+
+.Profile img {
+    width: 100%;
+    height: 100%;
+}
+
+.Profile .ProfileView {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 5px 10px;
+    background: #fff;
+    color: #262626;
+    border-radius: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.ProfileDetail {
+    height: 50%;
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: .5s;
+    transform: perspective(500px) scale(0);
+}
+
+.active {
+    transform: perspective(500px) scale(1);
+}
+
+.ProfileDetail h2 {
+    margin: 0;
+    padding: 0;
+    color: #607d8b;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.ProfileDetail h2 span {
+    font-size: 14px;
+    columns: #ccc;
+}
+
+.ProfileDetail p {
+    margin: 0;
+    padding: 10px 0 0;
+    font-size: 14px;
+    color: #aaa;
+}
+
+h3 {
+    background: #00bcd4;
+    color: #fff;
+    padding: 8px 50px;
+    border-radius: 25px;
+    display: -webkit-inline-box;
+}
+
+.ProfileDetail ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.ProfileDetail ul li {
+    list-style: none;
+    font-size: 20px;
+    width: 33.3%;
+}
+
+.ProfileDetail ul li:nth-child(1) .fa {
+    color: #00bcd4;
+}
+
+.ProfileDetail ul li:nth-child(2) .fa {
+    color: #00bcd4;
+}
+
+.ProfileDetail ul li:nth-child(3) .fa {
+    color: #00bcd4;
+}
+
+.close {
+    font-size: 20px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #f00;
+}
