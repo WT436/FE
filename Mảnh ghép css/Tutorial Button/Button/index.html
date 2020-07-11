@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Button/index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="#">Button</a>
+    <a href="#">Button</a>
+    <script type="text/javascript">
+        const butt = document.querySelectorAll('a');
+        butt.forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                let x = e.clientX - e.target.offsetLeft;
+                let y = e.clientY - e.target.offsetTop;
+
+                let rip = document.createElement('span');
+                rip.style.left = x + 'px';
+                rip.style.top = y + 'px';
+                this.appendChild(rip);
+                setTimeout(() => {
+                    rip.remove()
+                }, 1000);
+            })
+        })
+    </script>
+</body>
+
+</html>

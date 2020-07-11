@@ -1,0 +1,80 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #272727;
+    font-family: sans-serif;
+}
+
+.box {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: #ffffff;
+    position: absolute;
+    top: calc(50% - 160px);
+    left: calc(50% - 120px);
+    padding: 20px;
+    transition: 1s;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.box.active {
+    width: 240px;
+    height: 320px;
+}
+
+.box.active p {
+    transition-delay: 1s;
+    visibility: visible;
+}
+
+.box p {
+    font-size: 13px;
+    text-align: justify;
+    margin-top: 10px;
+    visibility: hidden;
+}
+
+.toggle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background: #2e2e2e;
+    transition: 1s;
+}
+
+.toggle span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #ffffff;
+    position: absolute;
+    top: 19px;
+    left: 10px;
+    transition: 1s;
+}
+
+.toggle span::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform: rotate(90deg);
+    background: #ffffff;
+    transition: 1s;
+}
+
+.toggle.active {
+    background: #ff3131;
+    top: 0;
+    left: calc(100% - 40px);
+    border-radius: 50%;
+    transform: scale(0.6);
+}
+
+.toggle.active span {
+    transform: rotate(225deg);
+}

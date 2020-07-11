@@ -1,0 +1,544 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+#scrollpath {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+#NamDepTrai {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 5px;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    animation: animate1 5s linear infinite;
+    border-radius: 20px;
+}
+
+@keyframes animate1 {
+    0%,
+    100% {
+        filter: hue-rotate(0deg);
+    }
+    50% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+#NamDepTrai:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(30px);
+}
+
+#NamDepTrai:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(30px);
+}
+
+.cv_Left {
+    position: relative;
+    width: 25%;
+    background-color: #263238;
+    height: 126em;
+    float: left;
+}
+
+.cv_Left_Img {
+    position: relative;
+    width: 100%;
+    height: 26em;
+    background-color: #13171a;
+    float: left;
+}
+
+.cv_Left_Img img {
+    width: 80%;
+    height: auto;
+    margin: 10%;
+    border-radius: 100%;
+}
+
+.NameJob {
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.Job {
+    color: aliceblue;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.tagA {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.myInfomation {
+    width: 80%;
+    height: auto;
+    margin: 10%;
+    float: left;
+    color: aliceblue;
+}
+
+.myInfomation i {
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    margin: 2px;
+    text-align: center;
+    background-color: rgb(35, 41, 41);
+    border-radius: 100%;
+    color: gray;
+}
+
+.MTNN {
+    width: 100%;
+    font-family: sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.detailMTNN {
+    width: 100%;
+    font-family: cursive;
+    font-size: 12px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.skillBox {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.skillBox p {
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.skillBox p:nth-child(2) {
+    float: right;
+    position: relative;
+    top: -25px;
+}
+
+.skill {
+    background-color: #262626;
+    padding: 1px;
+    box-sizing: border-box;
+    border: 1px solid #0fffb7;
+    border-radius: 4px;
+}
+
+.skill_lever {
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to left, #53ff04, #00ffe7);
+    animation: animate 5s linear infinite;
+    border-radius: 10px;
+}
+
+@keyframes animate {
+    0%,
+    100% {
+        filter: hue-rotate(0deg);
+    }
+    50% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.cv_Right {
+    width: 75%;
+    float: right;
+    height: 120em;
+    background-color: #ffffff;
+}
+
+.BoxDetail {
+    margin: 30px 30px;
+    padding: 0 30px;
+}
+
+.BoxDetail>div {
+    font-family: sans-serif;
+    font-size: 26px;
+    padding: 20px 0;
+}
+
+.setting {
+    background-color: #263238;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    border-radius: 100%;
+}
+
+.p1 {
+    width: 100%;
+    font-size: 26px;
+    font-weight: 700;
+    float: left;
+}
+
+.p2 {
+    float: right;
+    padding-top: 20px;
+    position: relative;
+    top: -25px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.p3 {
+    font-size: 14px;
+    width: 100%;
+    padding-top: 35px;
+    padding-bottom: 10px;
+    font-weight: 200;
+}
+
+.AutoDetai {
+    list-style: none;
+}
+
+.pmeo {
+    font-family: serif;
+    position: relative;
+    color: #000;
+    font-size: 16px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    animation: aniNamdeptrai 8s linear infinite;
+    background-size: 80%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.1);
+}
+
+.pmeo:nth-child(2) {
+    animation: aniNamdeptrai 7s linear infinite;
+}
+
+.pmeo:nth-child(3) {
+    animation: aniNamdeptrai 6s linear infinite;
+}
+
+.pmeo:nth-child(4) {
+    animation: aniNamdeptrai 5s linear infinite;
+}
+
+.pmeo:nth-child(5) {
+    animation: aniNamdeptrai 10s linear infinite;
+}
+
+@keyframes aniNamdeptrai {
+    0% {
+        background-position: -500%;
+        background-color: rgb(21, 255, 0);
+    }
+    20% {
+        background-position: -300%;
+        background-color: rgb(255, 0, 0);
+    }
+    40% {
+        background-position: -100%;
+        background-color: gold;
+    }
+    60% {
+        background-position: -300%;
+        background-color: rgb(255, 0, 0);
+    }
+    80% {
+        background-position: -500%;
+        background-color: rgb(21, 255, 0);
+    }
+    100% {
+        background-position: 500%;
+        background-color: rgb(0, 0, 0);
+    }
+}
+
+@media screen and (min-width:600px) and ( max-width: 900px) {
+    #NamDepTrai {
+        width: 4px;
+    }
+    .cv_Left_Img {
+        height: 17em;
+    }
+    .NameJob {
+        font-size: 20px;
+    }
+    .Job {
+        font-size: 13px;
+    }
+    .MTNN {
+        font-size: 13px;
+    }
+    .myInfomation {
+        width: 90%;
+        height: auto;
+        margin: 5%;
+        float: left;
+        color: aliceblue;
+    }
+    .myInfomation i {
+        padding: 3px;
+        width: 15px;
+        height: 15px;
+        margin: 1px;
+        text-align: center;
+    }
+    .tagA {
+        font-size: 10px;
+    }
+    .detailMTNN {
+        width: 100%;
+        font-family: cursive;
+        font-size: 10px;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .skillBox p {
+        font-size: 10px;
+    }
+    li {
+        font-size: 11px;
+    }
+    .p1 {
+        font-size: 20px;
+    }
+    .p2 {
+        top: -36px;
+        font-size: 11px;
+    }
+    .BoxDetail {
+        margin: 20px 20px;
+        padding: 0 20px;
+    }
+    .BoxDetail>div {
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width:300px) and ( max-width: 600px) {
+    #NamDepTrai {
+        width: 3px;
+    }
+    .cv_Left_Img {
+        height: auto;
+    }
+    .cv_Left {
+        width: 30%;
+        ;
+    }
+    .NameJob {
+        font-size: 12px;
+    }
+    .Job {
+        font-size: 8px;
+    }
+    .MTNN {
+        font-size: 9px;
+    }
+    .myInfomation {
+        width: 90%;
+        height: auto;
+        margin: 5%;
+        float: left;
+        color: aliceblue;
+    }
+    .myInfomation i {
+        padding: 1px;
+        width: 10px;
+        height: 10px;
+        margin: 1px;
+    }
+    .tagA {
+        font-size: 7px;
+    }
+    .detailMTNN {
+        width: 100%;
+        font-family: cursive;
+        font-size: 7px;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .skillBox p {
+        font-size: 7px;
+    }
+    .skillBox p:nth-child(2) {
+        float: right;
+        position: relative;
+        top: -12px;
+    }
+    .skillBox {
+        margin: 5px 0;
+    }
+    .skillBox p {
+        margin: 0 0 5px;
+    }
+    .skill_lever {
+        height: 3px;
+    }
+    li {
+        font-size: 10px;
+        margin-bottom: 6px;
+    }
+    .cv_Right {
+        width: 70%;
+    }
+    .p1 {
+        font-size: 16px;
+    }
+    .p2 {
+        top: -22px;
+        font-size: 11px;
+    }
+    .p3 {
+        font-size: 10px;
+        width: 100%;
+    }
+    .BoxDetail {
+        margin: 0px 5px;
+        padding: 0 4px;
+    }
+    .BoxDetail>div {
+        padding: 12px 0;
+        font-size: 11px;
+    }
+    .pmeo {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width:0px) and ( max-width: 300px) {
+    #NamDepTrai {
+        width: 1px;
+    }
+    .cv_Left_Img {
+        height: 9em;
+    }
+    .cv_Left {
+        width: 30%;
+        ;
+    }
+    .NameJob {
+        font-size: 12px;
+    }
+    .Job {
+        font-size: 8px;
+    }
+    .MTNN {
+        font-size: 9px;
+    }
+    .myInfomation {
+        width: 90%;
+        height: auto;
+        margin: 5%;
+        float: left;
+        color: aliceblue;
+    }
+    .myInfomation i {
+        padding: 1px;
+        width: 10px;
+        height: 10px;
+        margin: 1px;
+    }
+    .tagA {
+        font-size: 7px;
+    }
+    .detailMTNN {
+        width: 100%;
+        font-family: cursive;
+        font-size: 7px;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .skillBox p {
+        font-size: 7px;
+    }
+    .skillBox p:nth-child(2) {
+        float: right;
+        position: relative;
+        top: -12px;
+    }
+    .skillBox {
+        margin: 5px 0;
+    }
+    .skillBox p {
+        margin: 0 0 5px;
+    }
+    .skill_lever {
+        height: 3px;
+    }
+    li {
+        font-size: 10px;
+        margin-bottom: 6px;
+    }
+    .cv_Right {
+        width: 70%;
+    }
+    .p1 {
+        font-size: 16px;
+    }
+    .p2 {
+        top: -22px;
+        font-size: 11px;
+    }
+    .p3 {
+        font-size: 10px;
+        width: 100%;
+    }
+    .BoxDetail {
+        margin: 0px 5px;
+        padding: 0 4px;
+    }
+    .BoxDetail>div {
+        padding: 12px 0;
+        font-size: 11px;
+    }
+    .pmeo {
+        font-size: 10px;
+    }
+}
