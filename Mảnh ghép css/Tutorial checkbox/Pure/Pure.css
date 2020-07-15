@@ -1,0 +1,47 @@
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box input[type="checkbox"] {
+    display: none;
+}
+
+.box label {
+    position: relative;
+    display: inline-block;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.box label span {
+    position: relative;
+    top: 3px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid black;
+}
+
+.box input[type="checkbox"]:checked+span::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    bottom: 3px;
+    right: 3px;
+    background: black;
+    animation: nam 2s linear infinite;
+}
+
+@keyframes nam {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
