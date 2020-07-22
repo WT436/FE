@@ -8,13 +8,14 @@ body {
     background: #f7f6ff;
 }
 
-h2 {
+.container h2 {
     margin: 16px;
 }
 
 .container {
-    margin-top: 100px;
     padding: 32px;
+    float: left;
+    width: 33%;
 }
 
 .select-box {
