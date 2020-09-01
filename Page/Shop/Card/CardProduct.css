@@ -1,0 +1,193 @@
+﻿.Profile {
+    position: relative;
+    float: left;
+    margin: 2px 2px;
+    width: 200px;
+    height: 250px;
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, .2);
+}
+
+.Profile>img {
+    width: 100%;
+    height: 100%;
+}
+
+.ProfileDetail {
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.863);
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+    transition: .5s;
+    transform: perspective(500px) scale(0);
+}
+
+.OrderProductViewHome {
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+    height: 15px;
+    font-size: 12px;
+    text-align: center;
+    background-color: rgba(192, 188, 188, 0.582);
+    margin: 10px 5%;
+    border-radius: 10px;
+}
+
+.OrderProductViewHome span {
+    position: absolute;
+    float: left;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgba(251, 255, 0, 0.582);
+}
+
+.ProfileDetail>h2 {
+    margin: 10px;
+    padding: 0;
+    color: black;
+    font-size: 10px;
+    text-transform: uppercase;
+    word-break: keep-all;
+}
+
+.ProfileDetail>h2>span {
+    font-size: 19px;
+    columns: #ccc;
+}
+
+.ProfileDetail>p {
+    margin: 0;
+    padding: 10px 5px 0;
+    text-align: left;
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+}
+
+.ProfileDetail p span {
+    margin: 0;
+    padding: 10px 5px 10px 0;
+    font-size: 13px;
+    color: rgb(255, 0, 0);
+    text-decoration: line-through;
+}
+
+.ProfileDetail p i {
+    font-size: 16px;
+    color: rgb(255, 0, 0);
+}
+
+.GoToCartProduct {
+    position: relative;
+    display: block;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    line-height: 30px;
+    margin: 10px 13%;
+    text-decoration: none;
+    border-radius: 5px;
+    border-top: 4px solid #07d400;
+}
+
+.GoToCartProduct span {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: block;
+    text-transform: uppercase;
+    color: #262626;
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    border-radius: 5px;
+}
+
+.GoToCartProduct span::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffeb3d;
+    color: #262626;
+    transform-origin: top;
+    border-radius: 5px;
+    transform: rotateX(270deg);
+    transition: 0.5s;
+}
+
+.GoToCartProduct:hover span::before {
+    transform: rotateX(0deg);
+}
+
+.GoToCartProduct span::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2196f3;
+    color: #fff;
+    transform-origin: top;
+    border-radius: 5px;
+    transform: rotateX(270deg);
+    transition: 0.5s;
+}
+
+.GoToCartProduct:hover span::after {
+    transition-delay: 0.2s;
+    transform: rotateX(0deg);
+}
+
+.ProfileDetail>ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.ProfileDetail>ul>li {
+    cursor: pointer;
+    list-style: none;
+    font-size: 20px;
+    width: 33.3%;
+}
+
+.closes {
+    font-size: 16px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0 10px 0 10px;
+    color: rgb(250, 248, 248);
+    padding: 2px 7px;
+    background-color: #f00;
+}
+
+.ProfileDetail ul li:nth-child(1) .fa {
+    color: #f85f9f;
+}
+
+.ProfileDetail ul li:nth-child(2) .fa {
+    color: #000000;
+}
+
+.ProfileDetail ul li:nth-child(3) .fa {
+    color: #00bcd4;
+}
+
+.Profile:hover .ProfileDetail {
+    transform: perspective(500px) scale(1);
+}

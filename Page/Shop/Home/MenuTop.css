@@ -1,0 +1,156 @@
+.hnview-Detai-folow-product {
+    width: 360px;
+    z-index: 15;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 6px 12px 0px;
+    position: absolute;
+    top: 45px;
+    transform: translateX(-50%);
+    display: block;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(239, 239, 239);
+    border-image: initial;
+    background: rgb(255, 255, 255);
+    list-style: none;
+    margin: 0px;
+    border-radius: 0px 0px 3px 3px;
+    display: none;
+}
+
+.hnview-Detai-folow-product ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.hnview-Detai-folow-product ul li {
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-size: 13px;
+    letter-spacing: 0.1px;
+    cursor: pointer;
+    overflow: hidden;
+    border-bottom: 1px solid rgb(212, 212, 212);
+    padding: 10px;
+}
+
+.hnview-Detai-folow-product ul li i {
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-color: rgb(253, 129, 11);
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 30px;
+    border-radius: 50%;
+}
+
+.hnview-Detai-folow-product ul li p {
+    margin: 0px 0px 10px;
+    color: rgb(51, 51, 51);
+    font-size: 13px;
+    line-height: 1.31;
+    margin-right: 4px;
+    margin-bottom: 0px;
+    letter-spacing: 0.1px;
+    flex: 1 1 0%;
+}
+
+.hnview-Detai-folow-product_content {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    max-height: 35px;
+    overflow: hidden;
+}
+
+.hnview-Detai-folow-product_Date {
+    display: block;
+    width: 100%;
+    font-size: 11px;
+    color: rgb(153, 153, 153);
+    margin-top: 5px;
+}
+
+.hnview-Detai-folow-product::before {
+    margin-left: -9px;
+    bottom: 100%;
+    left: 50%;
+    content: " ";
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    pointer-events: none;
+    border-width: 9px;
+    border-style: solid;
+    border-color: transparent transparent rgb(255, 255, 255);
+    border-image: initial;
+    border-bottom: 9px solid rgb(255, 255, 255);
+}
+
+.hnview-Detai-folow-product::after {
+    content: " ";
+    height: 20px;
+    width: 50px;
+    top: -20px;
+    left: calc(50% - 25px);
+    position: absolute;
+    display: inline-block;
+    background: transparent;
+}
+
+.Oder1 {
+    left: calc(7% + 10px);
+}
+
+.Oder2 {
+    left: calc(22% + 10px);
+}
+
+.Oder3 {
+    left: calc(37% + 10px);
+}
+
+.Oder4 {
+    left: calc(52% + 10px);
+}
+
+.Oder5 {
+    left: calc(67% + 10px);
+}
+
+.Oder6 {
+    left: calc(83% + 10px);
+}
+
+.Order1_Display:hover .Oder1 {
+    display: block;
+}
+
+.Order2_Display:hover .Oder2 {
+    display: block;
+}
+
+.Order3_Display:hover .Oder3 {
+    display: block;
+}
+
+.Order4_Display:hover .Oder4 {
+    display: block;
+}
+
+.Order5_Display:hover .Oder5 {
+    display: block;
+}
+
+.Order6_Display:hover .Oder6 {
+    display: block;
+}

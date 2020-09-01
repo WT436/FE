@@ -1,0 +1,322 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+.HnHoiDap {
+    padding: 10px;
+    width: 100%;
+}
+
+.HnHoiDapTitle {
+    color: rgb(51, 51, 51);
+    font-size: 21px;
+    font-weight: 600;
+    margin: 10px 16px 10px;
+}
+
+.HnHoiDap .container {
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    overflow: hidden;
+    width: 100%;
+    float: left;
+}
+
+.HnHoiDapAvata {
+    display: flex;
+    padding: 20px 0px;
+    border-bottom: 1px solid rgb(247, 247, 247);
+}
+
+.HnHoiDapAvata>p>img {
+    width: 90px;
+    height: auto;
+    color: rgb(51, 51, 51);
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0px;
+    margin: 0 10px;
+    border: 5px solid rgb(137, 138, 135);
+    border-radius: 100%;
+}
+
+.HnHoiDapAvataOnline {
+    border: 5px solid rgb(53, 240, 47) !important;
+}
+
+.HnHoiDapAvata .HnHoiDapNoiDung {
+    flex: 1 1 0%;
+    padding: 0px 20px 0px 10px;
+}
+
+.HnHoiDapAvata .HnHoiDapNoiDung .HnHoiDapCauHoi {
+    color: rgb(51, 51, 51);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.HnHoiDapAvata .HnHoiDapNoiDung p {
+    margin: 0px 0px 12px;
+}
+
+.HnHoiDapAvata .HnHoiDapNoiDung .HnHoiDapCauTraLoi {
+    color: rgb(120, 120, 120);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.HnHoiDapAvata .HnHoiDapNoiDung .HnHoiDapNgayTraLoi {
+    color: rgb(120, 120, 120);
+    font-size: 12px;
+}
+
+.HnHoiDapAvata .HnHoiDapNoiDung .HnHoiDapThaoTac {
+    display: flex;
+    margin-top: 15px;
+}
+
+.HnHoiDapAvata .HnHoiDapNoiDung .HnHoiDapThaoTac a {
+    cursor: pointer;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-right: 35px;
+    color: rgb(136, 136, 136);
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.HnHoiDapThaoTacThea {
+    cursor: pointer;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-right: 35px;
+    color: rgb(136, 136, 136);
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.HnHoiDapAvata .HnHoiDapNoiDung .HnHoiDapThaoTac a .icon {
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.HnHoiDapAvata .HnHoiDapNoiDung .HnHoiDapThaoTac a {
+    cursor: pointer;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-right: 35px;
+    color: rgb(136, 136, 136);
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.icon.reply-arrow {
+    width: 19px;
+    height: 16px;
+    background-size: 19px 16px;
+}
+
+.HnHoiDapAllRep {
+    display: block;
+    color: rgb(0, 127, 240);
+    font-size: 13px;
+    font-weight: 400;
+    padding: 15px 20px;
+    border-bottom: 1px solid rgb(247, 247, 247);
+}
+
+.HnHoiDapAllSend {
+    display: flex;
+    padding: 20px;
+}
+
+.HnHoiDapAllSend .HnHoiDapAllSendInput {
+    flex: 1 1 0%;
+}
+
+.HnHoiDapAllSend .HnHoiDapAllSendInput input {
+    width: 100%;
+    height: 40px;
+    font-size: 13px;
+    padding: 0px 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(224, 224, 224);
+    border-image: initial;
+    border-radius: 4px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+
+.HnHoiDapAllSend button {
+    cursor: pointer;
+    width: 154px;
+    height: 40px;
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0px;
+    border: 1px solid #150799;
+    border-radius: 4px;
+    outline: none;
+}
+
+.HnHoiDapAllSend button:hover {
+    background: #150799;
+    color: white;
+}
+
+.HnHoiDapanhcuaBan {
+    width: 100%;
+}
+
+.HnHoiDapanhcuaBan>img {
+    width: 10%;
+}
+
+.HnHoiDapanhcuaBanActive {
+    display: none
+}
+
+
+/**/
+
+.HnHoiDapSelect {
+    position: relative;
+    width: 100%;
+    float: left;
+}
+
+.HnHoiDapSelect select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background: #5c6664;
+    background-image: none;
+    flex: 1;
+    padding: 0 .5em;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.HnHoiDapSelect select::-ms-expand {
+    display: none;
+}
+
+.HnHoiDapSelect .select {
+    position: relative;
+    display: flex;
+    width: 23%;
+    height: 2em;
+    float: left;
+    line-height: 3;
+    margin: 0 5%;
+    background: #5c6664;
+    overflow: hidden;
+    border-radius: .25em;
+}
+
+.HnHoiDapSelect .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #2b2e2e;
+    cursor: pointer;
+    pointer-events: none;
+    transition: .25s all ease;
+}
+
+.HnHoiDapSelect .select:hover::after {
+    color: #23b499;
+}
+
+.HnHoiDapStart {
+    width: 100%;
+    height: 20px;
+}
+
+.HnHoiDapStart li {
+    float: left;
+    list-style: none;
+    padding: 0 5px;
+    color: gold;
+}
+
+.HnHoiDapStart b {
+    margin: 0 10px;
+    font-weight: 400;
+}
+
+.HnHoiDapOderProduct {
+    font-size: 13px;
+    cursor: pointer;
+    color: #23b499;
+}
+
+.HnHoiDapOderProductFail {
+    color: red !important;
+}
+
+
+/**/
+
+.HnHoiDapPhanTrang {
+    position: absolute;
+    width: 50%;
+    margin: 10px 30% !important;
+    display: flex;
+    background: #fff;
+    border-radius: 25px;
+}
+
+.HnHoiDapPhanTrang>li {
+    list-style: none;
+}
+
+.HnHoiDapPhanTrang>li>a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: rgb(255, 255, 255);
+    color: #000000;
+    text-decoration: none;
+    border-radius: 4px;
+    border: 1px solid black;
+    margin: 5px;
+    font-weight: 1000;
+    box-sizing: inherit 0 5px 10px rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.HnHoiDapPhanTrang>li:first-child a {
+    border-radius: 20px 0 0 20px;
+}
+
+.HnHoiDapPhanTrang>li:last-child a {
+    border-radius: 0 20px 20px 0;
+}
+
+.HnHoiDapPhanTrang>li>a:hover {
+    background: rgba(104, 104, 104, 0.486);
+    color: #150799;
+}
+
+.activePhanTrang {
+    background: #150799 !important;
+    color: white !important;
+}

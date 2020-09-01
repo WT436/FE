@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Snack.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <button onclick="myFunction()">Kich Hoat</button>
+
+    <div id="Snack">Tin Nhan Nguoi dung</div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("Snack");
+            x.className = "show";
+            setTimeout(function() {
+                x.className = x.className.replace("show", "");
+            }, 3000);
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,511 @@
+  html,
+  body {
+      padding: 0;
+      margin: 0;
+      background-color: rgba(172, 166, 158, 0.37);
+      font-family: Roboto, Helvetica, Arial, sans-serif;
+  }
+  
+  .ContainerAll {
+      width: 90%;
+      margin: 0 5%;
+      height: auto;
+      display: flex;
+      margin-bottom: 100px;
+      background-color: rgb(255, 255, 255);
+      border-radius: 0px 0px 4px 4px;
+  }
+  
+  .Img_review_Product_card {
+      width: 40%;
+      height: 100%;
+      padding: 5px 15px;
+  }
+  
+  #exzoom {
+      width: 80%;
+  }
+  /**/
+  
+  .exzoom_img_ul2 {
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+      float: right;
+  }
+  
+  .exzoom_img_ul2 li {
+      position: relative;
+      width: 60px;
+      height: 60px;
+      list-style: none;
+      text-align: center;
+      border: 1px solid rgb(202, 200, 200);
+      border-radius: 3px;
+      padding: 3px;
+      margin: 5px;
+  }
+  
+  .exzoom_img_ul2 li img {
+      width: 100%;
+  }
+  
+  .solutionImageView {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 20px;
+      color: white;
+      text-decoration: none;
+      cursor: pointer;
+  }
+  /**/
+  
+  .Infomation_review_Product_card {
+      border-left: 1px solid rgb(202, 200, 200);
+      width: 65%;
+  }
+  
+  .Infomation_review_Product_card_1 {
+      border-bottom: 1px solid rgb(202, 200, 200);
+      padding: 20px 10px;
+  }
+  
+  .Infomation_review_Product_card_1_name {
+      width: 100%;
+      height: auto;
+      margin: 1px 0;
+      font-size: 25px;
+      font-weight: 100;
+      font-family: sans-serif;
+  }
+  
+  .Infomation_review_Product_card_1_star {
+      margin-bottom: 10px;
+      width: 100%;
+      height: 20px;
+      display: block;
+  }
+  
+  .Infomation_review_Product_card_1_star ul {
+      padding-left: 0;
+      width: 100%;
+  }
+  
+  .Infomation_review_Product_card_1_star li {
+      float: left;
+      list-style: none;
+  }
+  
+  .Infomation_review_Product_card_1_star li i {
+      float: left;
+      color: gold;
+      font-size: 18px;
+      margin: 0 3px;
+      line-height: 20px;
+  }
+  
+  .Infomation_review_Product_card_1_star a {
+      float: left;
+      text-decoration: none;
+      margin-left: 10px;
+  }
+  
+  .Infomation_review_Product_card_1_End {
+      width: 100%;
+  }
+  
+  .Infomation_review_Product_card_1_End span {
+      width: 33.33%;
+      font-family: sans-serif;
+      font-size: 14px;
+      padding: 3px 10px;
+  }
+  
+  .Infomation_review_Product_card_1_End span a {
+      text-decoration: none;
+      color: rgba(58, 56, 56, 0.562);
+  }
+  
+  .infomation2_review_detail {
+      width: 60%;
+  }
+  
+  .infomation2_review_detail_Gia {
+      border-bottom: 1px solid rgb(202, 200, 200);
+  }
+  
+  .infomation2_review_detail_Gia div {
+      margin: 10px 20px;
+      padding: 10px;
+      background-color: #1507994b;
+      border-radius: 3px;
+      color: white;
+  }
+  
+  .infomation2_review_detail_Gia div i {
+      padding: 0 10px;
+      font-size: 30px;
+  }
+  
+  .infomation2_review_detail_Gia div a {
+      font-size: 12px;
+      font-weight: 200;
+      font-family: sans-serif;
+  }
+  
+  .infomation2_review_detail_Gia p {
+      margin-left: 20px;
+      font-family: sans-serif;
+      font-size: 14px;
+      color: rgb(139, 136, 136);
+  }
+  
+  .infomation2_review_detail_Gia p span {
+      margin-left: 5px;
+      font-family: sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      color: rgb(255, 0, 0);
+  }
+  
+  .OrderProductViewHome {
+      position: relative;
+      overflow: hidden;
+      margin: 10px;
+      height: 14px;
+      font-size: 12px;
+      text-align: center;
+      background-color: rgba(192, 188, 188, 0.582);
+      border-radius: 10px;
+  }
+  
+  .OrderProductViewHome span {
+      position: absolute;
+      float: left;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background-color: rgba(251, 255, 0, 0.582);
+  }
+  
+  .infomation2_review_detail_Gia2 {
+      width: 100%;
+      height: 70px;
+      border-bottom: 1px solid rgb(202, 200, 200);
+  }
+  /**/
+  
+  .infomation2_review_detail_Gia2_Number {
+      width: 135px;
+      float: left;
+      height: auto;
+      position: relative;
+      display: flex;
+      margin: 10px 20px;
+      padding: 0;
+      background: #fff;
+      border-radius: 25px;
+      border: 1px solid black;
+  }
+  
+  .infomation2_review_detail_Gia2_Number li {
+      list-style: none;
+  }
+  
+  .infomation2_review_detail_Gia2_Number li>a {
+      display: block;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      background: rgb(0, 0, 0);
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 4px;
+      margin: 3px;
+      font-weight: 1000;
+      box-sizing: inherit 0 5px 10px rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.6);
+  }
+  
+  .infomation2_review_detail_Gia2_Number li>input {
+      display: block;
+      width: 35px;
+      height: 35px;
+      text-align: center;
+      line-height: 40px;
+      color: #0a0a0a;
+      text-decoration: none;
+      border-radius: 4px;
+      margin: 3px;
+      font-weight: 1000;
+      box-sizing: inherit 0 5px 10px rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.6);
+  }
+  
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+  }
+  
+  .infomation2_review_detail_Gia2_Number li:first-child a {
+      border-radius: 20px 0 0 20px;
+  }
+  
+  .infomation2_review_detail_Gia2_Number li:last-child a {
+      border-radius: 0 20px 20px 0;
+  }
+  
+  .infomation2_review_detail_Gia2_Number li>a:hover {
+      background: red;
+  }
+  /**/
+  
+  .rainbow-button {
+      width: calc(12vw + 6px);
+      height: calc(3vw + 6px);
+      background-image: linear-gradient(90deg, #00c0ff 0%, #ffcf00 49%, #fc4f4f 80%, #00c0ff 100%);
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: bold;
+      float: left;
+      text-decoration: none;
+      color: #fff;
+      margin: 10px;
+  }
+  
+  .rainbow-button:after {
+      content: attr(alt);
+      width: 12vw;
+      height: 3vw;
+      background-color: #150799;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .rainbow-button:hover {
+      animation: slidebg 0.8s linear infinite;
+  }
+  
+  @keyframes slidebg {
+      to {
+          background-position: 20vw;
+      }
+  }
+  
+  .infomation2_review_detail_Gia3 {
+      width: 100%;
+      height: 50px;
+      border-bottom: 1px solid rgb(202, 200, 200);
+  }
+  
+  .infomation2_review_detail_Gia3 div {
+      margin: 10px 20px;
+      padding: 5px;
+      border: 1px solid #150799;
+      border-radius: 3px;
+      color: rgb(77, 78, 76);
+  }
+  
+  .infomation2_review_detail_Gia3 div i {
+      padding: 0 5px;
+      font-size: 30px;
+  }
+  
+  .infomation2_review_detail_Gia3 div a {
+      font-size: 12px;
+      font-weight: 200;
+      font-family: sans-serif;
+  }
+  
+  .infomation2_review_detail_Gia4 {
+      width: 100%;
+      height: auto;
+      border-bottom: 1px solid rgb(202, 200, 200);
+  }
+  
+  .infomation2_review_detail_Gia4 p {
+      margin-left: 20px;
+      font-family: sans-serif;
+      font-size: 14px;
+      color: rgb(139, 136, 136);
+  }
+  
+  .images {
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      margin-bottom: 10px;
+      margin-left: 10px;
+  }
+  
+  .images a {
+      height: 90px;
+      flex: 0 0 90px;
+      padding: 4px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: rgb(216, 216, 216);
+      border-image: initial;
+      border-radius: 4px;
+      background-color: chartreuse;
+  }
+  
+  .images a img {
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+  }
+  
+  .images .pluss {
+      color: rgb(144, 144, 145);
+      font-size: 22px;
+      font-weight: 500;
+      margin: 0px 10px;
+  }
+  /**/
+  
+  .box {
+      position: relative;
+      padding-left: 20px;
+      width: 100%;
+  }
+  
+  .box input[type="checkbox"] {
+      display: none;
+  }
+  
+  .box label {
+      position: relative;
+      display: inline-block;
+      color: rgb(74, 74, 74);
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      width: 75%;
+      height: 16px;
+  }
+  
+  .box label span {
+      position: relative;
+      top: 3px;
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      border: 2px solid #150799;
+  }
+  
+  .GiaTienHienTaiCuaKhuyenMai {
+      float: right;
+      color: rgb(74, 74, 74);
+      font-size: 13px;
+      font-weight: 500;
+      margin-top: 4px;
+      margin-right: -14%;
+  }
+  
+  .activeProDuctName {
+      color: rgb(243, 8, 8);
+      font-size: 13px;
+      font-weight: 700;
+      margin: 0px;
+  }
+  
+  .NameProductKhuyenMai {
+      color: rgb(74, 74, 74);
+      font-size: 13px;
+      font-weight: 500;
+      margin-top: 4px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 200px;
+  }
+  
+  .box input[type="checkbox"]:checked+span::before {
+      content: '';
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      bottom: 3px;
+      right: 3px;
+      background: #150799;
+      animation: nam 2s linear infinite;
+  }
+  
+  @keyframes nam {
+      0% {
+          transform: rotate(0deg);
+      }
+      100% {
+          transform: rotate(360deg);
+      }
+  }
+  /**/
+  
+  .shoot {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 180px;
+      height: 50px;
+      padding: 10px;
+      background: #150799;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 50px;
+      color: #ff0;
+      text-decoration: none;
+      font-size: 18px;
+      font-family: sans-serif;
+      letter-spacing: 4px;
+      border: 1px solid #c4befc;
+  }
+  
+  .shoot::before,
+  .shoot::after,
+  .shoot>span::before,
+  .shoot>span::after {
+      content: '';
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background: #150799;
+      transition: 0.5s;
+      mix-blend-mode: hue;
+      transition: 1s;
+  }
+  
+  .shoot::before {
+      top: -5px;
+      left: -5px;
+  }
+  
+  .shoot::after {
+      top: -5px;
+      right: -5px;
+  }
+  
+  .shoot>span::before {
+      bottom: -5px;
+      left: -5px;
+  }
+  
+  .shoot>span::after {
+      bottom: -5px;
+      right: -5px;
+  }
+  
+  .shoot:hover:before,
+  .shoot:hover:after,
+  .shoot:hover>span::before,
+  .shoot:hover>span::after {
+      width: calc(150px/2);
+      height: calc(40px/2);
+  }

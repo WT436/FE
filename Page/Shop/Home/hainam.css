@@ -1,0 +1,538 @@
+﻿::-webkit-scrollbar {
+    /*Đống thanh trượt*/
+    width: 0;
+}
+
+#scrollpath {
+    position: fixed;
+    /*set up*/
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+#NamDepTrai {
+    position: fixed;
+    /*cái này thì mk đẹp trai nhất rồi hehe*/
+    top: 0;
+    right: 0;
+    width: 5px;
+    z-index: 1000;
+    border-radius: 5px;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    /*cài anime nhóe*/
+    0%,
+    100% {
+        filter: hue-rotate(0deg);
+    }
+    50% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+
+/*trước và sau của cái thanh củ lìn này*/
+
+#NamDepTrai:before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(30px);
+}
+
+#NamDepTrai:after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(30px);
+}
+
+
+/*buton*/
+
+.brands-hnl {
+    position: relative;
+    display: inline-block;
+    margin: 3px 0;
+    color: rgb(79, 231, 8);
+    font-size: 24px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.5s;
+    letter-spacing: 2px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+    float: left;
+}
+
+.brands-hnl:hover {
+    background: #71a8d7;
+    color: #050801;
+    box-shadow: 0 0 5px rgb(79, 231, 8), 0 0 10px rgb(79, 231, 8), 0 0 15px rgb(79, 231, 8), 0 0 250px rgb(79, 231, 8);
+}
+
+.brands-hnl span {
+    position: absolute;
+    display: block;
+}
+
+.brands-hnl span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, red);
+    animation: ani1 1s linear infinite;
+}
+
+@keyframes ani1 {
+    0% {
+        left: -100%;
+    }
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.brands-hnl span:nth-child(2) {
+    top: 100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #008aff);
+    animation: ani2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes ani2 {
+    0% {
+        top: -100%;
+    }
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.brands-hnl span:nth-child(3) {
+    right: -100%;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(180deg, transparent, #52f606);
+    animation: ani3 1s linear infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes ani3 {
+    0% {
+        right: -100%;
+    }
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.brands-hnl span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #e90ff2);
+    animation: ani4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes ani4 {
+    0% {
+        bottom: -100%;
+    }
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+
+/*button*/
+
+.button span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: -1;
+    border: 1px solid royalblue;
+    color: royalblue;
+}
+
+.button span::before {
+    content: ' ';
+    position: absolute;
+    width: 8%;
+    height: 500%;
+    background: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-60deg);
+    transition: all 0.3s;
+}
+
+.button:hover span::before,
+.button:focus span::before {
+    transform: translate(-50%, -50%) rotate(-90%);
+    width: 100%;
+    background: rgba(102, 238, 238, 0.67);
+}
+
+.button:hover,
+.button:focus {
+    color: black;
+}
+
+
+/*button*/
+
+.MuaSanPham {
+    position: relative;
+    display: inline-block;
+    padding: 14px 13px;
+    color: #000000;
+    font-size: 11px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    letter-spacing: 10px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.MuaSanPham:hover {
+    background: rgb(79, 231, 8);
+    color: #00ffe7;
+    box-shadow: 0 0 5px rgb(79, 231, 8), 0 0 10px rgb(79, 231, 8), 0 0 15px rgb(79, 231, 8), 0 0 250px rgb(79, 231, 8);
+}
+
+.MuaSanPham span {
+    position: absolute;
+    display: block;
+}
+
+.MuaSanPham span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(102, 238, 238, 0.67));
+    animation: ani1 1s linear infinite;
+}
+
+@keyframes ani1 {
+    0% {
+        left: -100%;
+    }
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.MuaSanPham span:nth-child(2) {
+    top: 100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #008aff);
+    animation: ani2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes ani2 {
+    0% {
+        top: -100%;
+    }
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.MuaSanPham span:nth-child(3) {
+    right: -100%;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(180deg, transparent, #09fce6);
+    animation: ani3 1s linear infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes ani3 {
+    0% {
+        right: -100%;
+    }
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.MuaSanPham span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #008aff);
+    animation: ani4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes ani4 {
+    0% {
+        bottom: -100%;
+    }
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+.contrainerSoLuongSanPham {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 70px;
+    position: relative;
+}
+
+input[type="range"] {
+    width: 80%;
+    -webkit-appearance: none;
+    height: 5px;
+    position: relative;
+    background: #4800ff;
+    border-radius: 10px;
+    outline: none;
+    float: left;
+    margin-top: 10px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: #2a3de0;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    float: left;
+}
+
+#NumberSoLuongSanPham {
+    background: #ffd901;
+    height: 30px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 3px;
+    float: left;
+    margin: 20px 20px;
+}
+
+#NumberSoLuongSanPham::before {
+    position: absolute;
+    content: "";
+    height: 0;
+    width: 0;
+    border-top: 10px solid #ffd901;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    bottom: -10px;
+}
+
+
+/**comment product*/
+
+.boxComment {
+    width: 100%;
+    border: 2px solid black;
+    padding: 15px 10px;
+    position: relative;
+}
+
+.boxComment h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+textarea {
+    height: 26px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    margin-bottom: 10px;
+    resize: none;
+    outline: none;
+    transition: 0.5s;
+}
+
+.btnCommnet>input,
+.btnCommnet>button {
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btnCommnet>input {
+    color: white;
+    background: rgb(15, 122, 221);
+}
+
+.btnCommnet>button {
+    color: #333;
+    background: transparent;
+}
+
+.btnCommnet {
+    display: none;
+}
+
+
+/*start*/
+
+.rating {
+    display: flex;
+    justify-content: center;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    display: block;
+    cursor: pointer;
+    width: 30px;
+}
+
+.rating label::before {
+    content: "\f005";
+    font-family: fontAwesome;
+    position: relative;
+    display: block;
+    font-size: 20px;
+    color: #101010;
+}
+
+.rating label::after {
+    content: "\f005";
+    position: absolute;
+    font-family: fontAwesome;
+    display: block;
+    font-size: 20px;
+    color: gold;
+    top: 63px;
+    opacity: 0;
+    transition: 0.5s;
+    text-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.rating label:hover::after,
+.rating label:hover~label::after,
+.rating input:checked~label::after {
+    opacity: 1;
+}
+
+
+/*commert*/
+
+.Commentmedia {
+    width: 80%;
+    margin: 10px 10%;
+    margin-bottom: 1%;
+}
+
+.Commentmedia>img {
+    margin: 0 1em;
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: block;
+    background-color: white;
+}
+
+.UserComment {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.media_content {
+    display: block;
+    border-left: 2px dotted blue;
+    padding-left: 10px;
+}
+
+.contextComment {
+    display: block;
+    font-size: 11px;
+    font-family: cursive;
+    font-weight: 400;
+}
+
+.trangt5hai {
+    margin-left: 10%;
+    margin-top: 10px;
+}
+
+.checktrangthais {
+    display: none;
+}
+
+.laybletrangThais {
+    cursor: pointer;
+}
+
+.laybletrangThais>i {
+    padding: 0 3px;
+}
+
+.xemThem {
+    width: 50%;
+    float: left;
+    color: burlywood;
+    font-size: 12px;
+}
+
+a>i {
+    padding: 0 3px;
+}
+
+.btnN {
+    color: black;
+    padding: 5px;
+}

@@ -1,0 +1,362 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #c6c6c677;
+}
+
+.ContainerCard {
+    width: 90%;
+    height: auto;
+    margin: 0 5%;
+    background-color: #ffffff;
+    position: absolute;
+}
+
+.customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    float: left;
+    width: 70%;
+    z-index: 1;
+}
+
+.customers td,
+.customers th {
+    border: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+}
+
+.customers tr:hover {
+    background-color: #ddd;
+}
+
+.customers th {
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+/*check bõx*/
+
+.ceter {
+    position: relative;
+}
+
+.ceter input[type="checkbox"] {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    -webkit-appearance: none;
+    background: #c6c6c6;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
+    transition: 0.5s;
+}
+
+.ceter input:checked[type="checkbox"] {
+    background: #03a9f4;
+}
+
+.ceter input[type="checkbox"]::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    background: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    transition: 0.5s;
+}
+
+.ceter input:checked[type="checkbox"]::before {
+    left: 20px;
+}
+
+
+/**/
+
+.checkbooxCard {
+    width: 5%;
+}
+
+.AvatarCard {
+    width: 20%;
+}
+
+.InfomationProductCard {
+    width: 55%;
+}
+
+.ChangNumberCard {
+    width: 20%;
+}
+
+.GiaNumberCardGoc>span {
+    float: right;
+    padding: 0 10px
+}
+
+.AvatarCard a img {
+    width: 100%;
+    height: auto;
+}
+
+.InfomationProductCard div {
+    width: 60%;
+}
+
+.InfomationProductCard>a {
+    font-size: 15px;
+    width: 100%;
+    height: auto;
+    text-decoration: none;
+    color: black;
+    font-weight: 200;
+    font-family: cursive;
+}
+
+.InfomationProductCard p {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+.InfomationProductCard p>a {
+    font-size: 15px;
+    width: 100%;
+    height: auto;
+    text-decoration: none;
+    color: #150799;
+    font-weight: 200;
+    font-family: sans-serif;
+}
+
+.InfomationProductCard p>a:hover {
+    color: rgb(255, 0, 0);
+}
+
+a:hover {
+    color: rgb(0, 204, 255);
+}
+
+.GiaNumberCardGiam {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    color: red;
+}
+
+.GiaNumberCardGoc {
+    width: 100%;
+}
+
+.UpDownNumberProduct {
+    width: 90%;
+    margin: 0 5%;
+    display: flex;
+    flex-wrap: nowrap;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(200, 200, 200);
+    border-image: initial;
+    border-radius: 3px;
+}
+
+.UpDownNumberProduct .NumberProductInput {
+    width: 50%;
+    text-align: center;
+    font-size: 13px;
+    appearance: none;
+    border-width: initial;
+    border-left: 1px solid rgb(200, 200, 200);
+    border-right: 1px solid rgb(200, 200, 200);
+    border-top: 0;
+    border-bottom: 0;
+    background: transparent;
+    margin: 0px;
+    border-radius: 3px;
+}
+
+.UpDownNumberProduct .ChangNumberProduct {
+    width: 10%;
+    border-right: none;
+    display: inline-block;
+    color: rgb(153, 153, 153);
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 3px;
+}
+
+.UpDownNumberProduct .ChangNumberProduct:active {
+    -webkit-box-shadow: 0px 2px 0px #878787, 0px 2px 8px #000000;
+    box-shadow: 0px 2px 0px #878787, 0px 2px 8px #000000;
+    top: 7px;
+}
+
+.UpDownNumberProduct .ChangNumberProduct:hover {
+    background-color: white;
+    color: black;
+}
+
+
+/**/
+
+.CommonBuyProduct {
+    width: 26%;
+    height: auto;
+    float: left;
+    height: auto;
+    margin: 20px 1%;
+    padding: 10px 1%;
+}
+
+.TotalMoneyCard {
+    width: 100%;
+    height: auto;
+    background: #ddd;
+    border-radius: 5px;
+}
+
+.totalNoVatCard {
+    width: 90%;
+    height: auto;
+    height: 40px;
+    border-bottom: 1px dotted black;
+    line-height: 40px;
+    padding: 0 5%;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: rgb(141, 136, 136);
+}
+
+.totalNoVatCard>span {
+    float: right;
+    font-size: 14px;
+    font-weight: 700;
+    color: black;
+}
+
+.totalVat {
+    width: 90%;
+    height: auto;
+    height: auto;
+    line-height: 40px;
+    padding: 0 5%;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: rgb(141, 136, 136);
+}
+
+.totalVat>span {
+    float: right;
+    font-size: 19px;
+    font-weight: 600;
+    color: rgb(250, 4, 4);
+}
+
+.totalVat li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.totalVat li span {
+    color: rgb(88, 80, 68);
+    margin: 0 5px;
+}
+
+.ButtonBuyProduct {
+    width: 100%;
+    margin: 10px 0
+}
+
+.ButtonBuyProduct button {
+    background-color: chartreuse;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    outline: none;
+}
+
+.ButtonBuyProduct button:hover {
+    background-color: rgba(128, 255, 0, 0.411);
+}
+
+.DiscountProduct {
+    width: 100%;
+    height: auto;
+    background: #ddd;
+    border-radius: 5px;
+}
+
+.DiscountProduct h3 {
+    width: 90%;
+    padding: 5px 5%;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px dotted black;
+    font-size: 16px;
+    font-family: cursive;
+    font-weight: 300;
+}
+
+.DiscountProduct>form {
+    display: flex;
+    flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 0 10px 0px 10px
+}
+
+.DiscountProduct>form>input {
+    color: rgb(153, 153, 153);
+    font-size: 20px;
+    width: calc(100% - 114px);
+    border-width: 1px 1px 1px;
+    border-style: solid none solid solid;
+    border-color: rgb(224, 224, 224) rgb(224, 224, 224) rgb(224, 224, 224);
+    border-image: initial;
+    border-right: none;
+    padding: 4px 12px;
+    outline: none;
+    border-radius: 3px 0px 0px 3px;
+}
+
+.DiscountProduct>form>button {
+    color: rgb(36, 36, 36);
+    font-size: 12px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    background: rgb(253, 216, 53);
+    padding: 9px 20px;
+    outline: none;
+    border-radius: 0px 3px 3px 0px;
+}
+
+.DiscountProduct>form>button:active {
+    -webkit-box-shadow: 0px 2px 0px #878787, 0px 2px 8px #000000;
+    box-shadow: 0px 2px 0px #878787, 0px 2px 8px #000000;
+    top: 7px;
+}
+
+.DiscountProduct>a {
+    width: 90%;
+    padding: 0px 5%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    font-family: cursive;
+    font-weight: 300;
+    text-decoration: none;
+    color: #150799;
+}

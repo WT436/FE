@@ -1,0 +1,51 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="lightbox.css">
+</head>
+
+<body>
+    <a class="example-image-link" href="/Page/Shop/IMG/93114864_238532614223784_6538662055426129920_n.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae cursus ligula">
+        <img src="/Page/Shop/IMG/93114864_238532614223784_6538662055426129920_n.jpg" alt="" />
+        <div class="captn">
+            <h4>Visitors</h4>
+            <p>Aliquam non</p>
+        </div>
+    </a>
+    <script src="lightbox-plus-jquery.min.js"></script>
+</body>
+
+</html> -->
+<!-- Cái Số 2 -->
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./ViewImage.css">
+
+<body>
+    <a class="ReviewAllImageProduct">
+        <img title="dsadadas1" class="DataReviewImageProduct" src="/Page/Shop/IMG/93114864_238532614223784_6538662055426129920_n.jpg" onclick="openModal();">
+    </a>
+    <a class="ReviewAllImageProduct">
+        <img title="dsadadas2" class="DataReviewImageProduct hidImageReview" src="/Page/Shop/IMG/93114864_238532614223784_6538662055426129920_n.jpg" onclick="openModal();">
+    </a>
+    <a class="ReviewAllImageProduct">
+        <img title="dsadadas3" class="DataReviewImageProduct hidImageReview" src="/Page/Shop/IMG/93114864_238532614223784_6538662055426129920_n.jpg" onclick="openModal();">
+    </a>
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal();">&times;</span>
+        <div class="modal-content">
+            <div class="mySlides" onclick="chuyenDoi(this);">
+                <div id="numbertext_ReviewImage"></div>
+                <img id="img_ReviewImage" src="">
+            </div>
+            <div class="caption-container">
+                <p id="caption_ReviewImage"></p>
+            </div>
+        </div>
+    </div>
+    <script src="./ViewImage.js"></script>
+</body>
+
+</html>

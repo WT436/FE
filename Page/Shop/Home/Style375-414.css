@@ -1,0 +1,394 @@
+@media screen and (min-width: 376px) and (max-width:414px) {
+    #PPMiniCart form {
+        width: 285px !important;
+    }
+    #PPMiniCart ul {
+        width: 263px !important;
+    }
+    #PPMiniCart {
+        left: 69% !important;
+    }
+    #PPMiniCart .minicart-subtotal {
+        padding-left: 5px !important;
+        font-size: 13px !important;
+    }
+    .agile-login {
+        width: 80%;
+    }
+    .hnl_offers p {
+        font-size: 8px;
+    }
+    .hnl_offers {
+        width: 100%;
+        padding: 1px 0 5px;
+    }
+    .agile-login ul li a {
+        font-size: 8px;
+    }
+    .product_list_header {
+        width: 20%;
+        height: 30px;
+    }
+    .hnview-cart {
+        height: 36px;
+    }
+    .hnview-cart div {
+        font-size: 9px;
+        border-radius: 9px;
+    }
+    .hnls_logo_products_left a img {
+        margin-left: 15%;
+        width: 70%;
+        height: 100%;
+    }
+    .Search-box {
+        top: 7em;
+        right: 3%;
+        transform: translate(-10%, -10%);
+        height: 30px;
+        border-radius: 30px;
+    }
+    .search-btn {
+        width: 30px;
+        height: 30px;
+    }
+    .textsearch {
+        padding: 0;
+        font-size: 10px;
+        line-height: 30px;
+    }
+    .hnls_logo_products_fear {
+        padding: 10px 0;
+        width: 100%;
+    }
+    .hnls_logo_products_fear_Top_el {
+        width: 16%;
+        height: 100%;
+        padding: 5px 20px;
+    }
+    .hnls_logo_products_fear_Top_el i {
+        font-size: 14px;
+        margin: 7px 15px;
+    }
+    .hnls_logo_products_fear_Top_el span {
+        width: 8px;
+        height: 8px;
+        top: 10px;
+        left: 76%;
+    }
+    .hnview-Detai-folow-product {
+        width: 310px;
+        transform: translateX(-56%);
+    }
+    .hnview-Detai-folow-product ul li i {
+        margin-right: 6px;
+        width: 25px;
+        height: 25px;
+        font-size: 14px;
+    }
+    .hnview-Detai-folow-product ul li p {
+        font-size: 8px;
+    }
+    .hnview-Detai-folow-product_Date {
+        font-size: 9px;
+        margin-top: 0px;
+    }
+    .Oder1 {
+        left: calc(63% + 10px);
+    }
+    .Oder2 {
+        left: calc(63% + 10px);
+    }
+    .Oder3 {
+        left: calc(63% + 10px);
+    }
+    .Oder4 {
+        left: calc(63% + 10px);
+    }
+    .Oder5 {
+        left: calc(63% + 10px);
+    }
+    .Oder6 {
+        left: calc(63% + 10px);
+    }
+    /**/
+    .navbar-toggle {
+        padding: 4px 4px;
+        margin-top: 5px;
+        margin-right: 0px;
+        margin-bottom: 15px;
+    }
+    .navbar-toggle .icon-bar {
+        width: 15px;
+    }
+    .skdslider .slide-desc {
+        bottom: 0%;
+    }
+    .skdslider .slide-desc>h3 {
+        font-size: 8px;
+        width: 100%;
+        line-height: 20px;
+    }
+    .skdslider {
+        height: 142px;
+    }
+    /**/
+    .hnls_logo_products_fear_Top_el b {
+        font-size: 7px;
+    }
+    .hnls_logo_products_left {
+        margin: 3px 0 12px;
+    }
+    .hnl_search input[type="search"] {
+        width: 83%;
+    }
+    .top-brands h2,
+    .newproducts-hnagile h3,
+    .login h2,
+    .register h2,
+    .faq-hnagile h3,
+    .brands h3 {
+        font-size: 0.8em;
+    }
+    .nav-tabs>li>a {
+        font-size: 6px;
+    }
+    div#myTabContent {
+        padding: 20px 20px;
+    }
+    p.hnl-ad {
+        font-size: 13px;
+        line-height: 24px;
+    }
+    .top_brand_left {
+        padding: 0;
+    }
+    .ban-text1 h4 {
+        font-size: 14px;
+    }
+    .ban-text1 {
+        left: 17%;
+        padding: 8px 18px;
+    }
+    .top-brands {
+        padding: 1em 0;
+    }
+    .grid_3.grid_5 {
+        margin-top: 2em;
+    }
+    .ban-bottom-hnl {
+        padding: 2em 0;
+    }
+    .brands {
+        padding: 2em 0;
+    }
+    .hnlayouts-brand {
+        width: 30%;
+        padding: 0;
+        margin: 1%;
+    }
+    .brands-hnl p a {
+        font-size: 8px;
+    }
+    .brands-agile {
+        margin-top: 0em;
+    }
+    .newproducts-hnagile {
+        padding: 0em 0 0em;
+    }
+    .footer-copy p {
+        margin: 0 0 0;
+    }
+    .footer {
+        padding: 2em 0 1.5em;
+    }
+    .hn_footer_grid h3 {
+        font-size: 0.9em;
+    }
+    .hn_footer_grid {
+        padding: 0;
+    }
+    .sorting-left {
+        width: 47%;
+        margin-right: 2%;
+    }
+    .sorting {
+        width: 51%;
+    }
+    .products {
+        padding: 2em 0;
+    }
+    /**/
+    .Profile {
+        margin: 2px 2px;
+        width: 140px;
+        height: 190px;
+    }
+    .closes {
+        font-size: 12px;
+    }
+    .ProfileDetail>h2 {
+        margin: 4px;
+    }
+    .ProfileDetail>h2>span {
+        font-size: 15px;
+    }
+    .ProfileDetail>p {
+        font-size: 9px;
+        padding: 5px 5px 0;
+    }
+    .ProfileDetail>ul>li {
+        font-size: 15px;
+    }
+    /**/
+    .ProfileDetail p span {
+        padding: 4px 3px 5px 0;
+        font-size: 9px;
+    }
+    .ProfileDetail p i {
+        font-size: 10px;
+    }
+    i.fa.fa-arrow-right {
+        color: #150799;
+        margin-right: 5px;
+    }
+    .categories ul.cate,
+    .new-products-grids {
+        padding: 1em;
+    }
+    .GoToCartProduct {
+        width: 109px;
+        height: 25px;
+        line-height: 20px;
+        margin: 0px 13%;
+        font-size: 10px;
+    }
+    ul.cate ul {
+        margin-left: 1.5em;
+    }
+    /**/
+    .hn_footer_grid ul li {
+        margin-bottom: 0em;
+        font-size: 9px;
+    }
+    .hn_footer_grid ul.address li i {
+        width: 20px;
+        height: 20px;
+        margin-right: 1em;
+    }
+    .about,
+    .about-team,
+    .contact,
+    .codes {
+        padding: 2em 0;
+    }
+    .agileits_hnlayouts_map_pos1 {
+        padding: 1em;
+    }
+    .agileits_hnlayouts_map_pos {
+        top: 13%;
+        padding: 1em;
+    }
+    .agile_map iframe {
+        min-height: 430px;
+    }
+    h3.hn_agile_header,
+    h2.hn_agile_header {
+        font-size: 1.4em;
+    }
+    .about-agileinfo {
+        margin-top: 2em;
+    }
+    .about-wthree-grids {
+        padding: 0;
+    }
+    .about .grid-top h4 {
+        font-size: 1em;
+        letter-spacing: 1px;
+    }
+    .time-top h4 {
+        font-size: 1.5em;
+    }
+    .about-slid {
+        padding: 3em 0;
+    }
+    .about-slid h2 {
+        font-size: 1.3em;
+    }
+    .about-team-grids {
+        width: 100%;
+    }
+    .faq-hnagile {
+        padding: 2em 0em;
+    }
+    ul.faq {
+        margin-top: 2em;
+        padding: 0 1em;
+    }
+    .faq-hnagile .faq li {
+        margin-top: 1em;
+    }
+    .faq>li>a {
+        line-height: 23px;
+    }
+    .register {
+        padding: 2em 0;
+    }
+    .login-form-grids {
+        margin: 2em auto 0;
+        padding: 1.2em;
+    }
+    .register-check-box label {
+        font-size: 13px;
+    }
+    .checkbox {
+        padding-left: 30px !important;
+    }
+    .login {
+        padding: 2em 0;
+    }
+    .login p a {
+        font-size: 1em;
+    }
+    .checkout h2 {
+        font-size: 0.875em;
+        line-height: 22px;
+    }
+    .checkout {
+        padding: 2em 0;
+    }
+    .value-minus,
+    .value-plus {
+        margin: 4px 10px;
+    }
+    .quantity-select .entry.value-minus {
+        margin-left: 10px;
+    }
+    .value {
+        margin: 4px 10px;
+    }
+    td.invert-image a img {
+        width: 72%;
+    }
+    .agileinfo_single h2 {
+        font-size: 0.95em;
+    }
+    .hnagile_description h4 {
+        font-size: 0.875em;
+    }
+    .hnagile_description {
+        margin: 1em 0;
+    }
+    .hnagile_description p {
+        font-size: 13px;
+    }
+    .login-form-grids {
+        width: 100%;
+    }
+    .checkout h2 {
+        font-size: 0.875em;
+    }
+    .agileinfo_single_left {
+        padding: 1em 1em;
+    }
+}

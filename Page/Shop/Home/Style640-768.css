@@ -1,0 +1,312 @@
+            @media screen and (min-width: 641px) and (max-width:768px) {
+                /*******************************************************/
+                #PPMiniCart {
+                    left: 36% !important;
+                    top: 140px !important;
+                }
+                #PPMiniCart form {
+                    max-height: 185px !important;
+                }
+                .top-brands {
+                    padding: 1em 0;
+                }
+                p.hnl-ad {
+                    width: 80%;
+                }
+                .brands {
+                    padding: 3em 0;
+                }
+                /*******************************************************/
+                .hnl_offers {
+                    width: 36%
+                }
+                .agile-login {
+                    width: 56%;
+                }
+                Button.hnview-cart i.fa {
+                    font-size: 33px;
+                }
+                .hnview-cart div {
+                    padding: 2px;
+                    font-size: 11px;
+                }
+                /*******************************************************/
+                .logo_products {
+                    padding: 0em 0;
+                }
+                .hnls_logo_products_left {
+                    width: 16%;
+                    margin: 6px 0;
+                }
+                .hnls_logo_products_fear {
+                    padding: 1px 0;
+                    margin: 0px 10px;
+                }
+                .hnls_logo_products_fear_Top_el {
+                    width: 15%;
+                    padding: 0px 1px;
+                    margin: 0px 1px;
+                }
+                .hnls_logo_products_fear_Top_el i {
+                    font-size: 28px;
+                    margin: 3px 8px;
+                }
+                .hnls_logo_products_fear_Top_el span {
+                    width: 11px;
+                    height: 11px;
+                    top: 1px;
+                    left: 5%;
+                }
+                .hnls_logo_products_fear_Top_el b {
+                    font-size: 9px;
+                    padding: 0 14px;
+                }
+                /*******************************************************/
+                .navbar-nav>li {
+                    float: left;
+                    margin-left: 5px;
+                    text-align: center;
+                }
+                .dropdown-menu.columns-3 {
+                    min-width: 190px;
+                    padding: 7px 10px;
+                }
+                .navbar-default .navbar-nav>li>a {
+                    font-size: 11px;
+                }
+                /*******************************************************/
+                .top-brands h2,
+                .newproducts-hnagile h3,
+                .login h2,
+                .register h2,
+                .faq-hnagile h3,
+                .brands h3 {
+                    font-size: 1em;
+                }
+                .brands-agile {
+                    margin-top: 1em;
+                }
+                .hnlayouts-brand {
+                    width: 14.33%;
+                    margin-bottom: -3%;
+                }
+                /*******************************************************/
+                .grid_3.grid_5 {
+                    margin-top: 1em;
+                }
+                /*******************************************************/
+                .newproducts-hnagile {
+                    padding: 1em 0 1em;
+                }
+                .agile_top_brands_grids {
+                    margin-top: 1em;
+                }
+                /*******************************************************/
+                .Profile {
+                    width: 170px;
+                    height: 220px;
+                }
+                /*******************************************************/
+                .closes {
+                    font-size: 14px;
+                    padding: 1px 4px;
+                }
+                .ProfileDetail>h2 {
+                    margin: 4px;
+                    padding: 1px;
+                }
+                .ProfileDetail>h2>span {
+                    font-size: 15px;
+                }
+                .ProfileDetail>p {
+                    padding: 3px 3px 0;
+                    font-size: 10px;
+                }
+                .ProfileDetail p span {
+                    padding: 6px 3px 5px 0;
+                    font-size: 10px;
+                }
+                /*******************************************************/
+                .GoToCartProduct {
+                    width: 120px;
+                    height: 30px;
+                    line-height: 30px;
+                    margin: 7px 13%;
+                }
+                .ProfileDetail>ul>li {
+                    font-size: 17px;
+                }
+                /*******************************************************/
+                /*******************************************************/
+                .agile_top_brands_grids {
+                    margin-top: 2em;
+                }
+                .ban-bottom-hnl {
+                    padding: 3em 0;
+                }
+                .products {
+                    padding: 3em 0;
+                }
+                ul.paging {
+                    margin: 2em auto 0;
+                }
+                .about,
+                .about-team,
+                .contact,
+                .codes {
+                    padding: 3em 0;
+                }
+                .about-agileinfo {
+                    margin-top: 3em;
+                }
+                .team-agileitsinfo {
+                    margin-top: 3em;
+                }
+                .register {
+                    padding: 3em 0;
+                }
+                .login {
+                    padding: 3em 0;
+                }
+                .checkout {
+                    padding: 3em 0;
+                }
+                .navbar-nav {
+                    margin: 0;
+                }
+                .about,
+                .about-team,
+                .contact,
+                .codes {
+                    padding: 3em 0;
+                }
+                .agileits_hnlayouts_map_pos {
+                    width: 45%;
+                }
+                ul.faq {
+                    margin-top: 3em;
+                    padding: 0 1.5em;
+                }
+                .faq-hnagile {
+                    padding: 3em 0em;
+                }
+                .navbar-nav .open .dropdown-menu {
+                    background: #fff;
+                }
+                .navbar-default {
+                    background: none;
+                    border: none;
+                    text-align: center;
+                }
+                .hnl_offers p {
+                    font-size: 13px;
+                }
+                .hnls_logo_products_left h1 a {
+                    font-size: 26px;
+                }
+                .skdslider {
+                    height: 281px;
+                }
+                .snipcart-details {
+                    width: 100%;
+                }
+                .agile_top_brand_left_grid1 p {
+                    font-size: 10px;
+                }
+                .agile_top_brand_left_grid1 h4,
+                .agileinfo_single_right_snipcart h4 {
+                    font-size: 0.6em;
+                }
+                .value {
+                    width: 27px;
+                    height: 27px;
+                    padding: 8px 0px;
+                    line-height: 13px;
+                }
+                .value-minus,
+                .value-plus {
+                    height: 27px;
+                    line-height: 13px;
+                    width: 27px;
+                    font-size: 16px;
+                }
+                .agileinfo_single h2 {
+                    font-size: 1.3em;
+                }
+                .agile-login ul li {
+                    padding: 0em 0.4em;
+                }
+                .hnls_logo_products_left1 {
+                    width: 100%;
+                    text-align: center;
+                }
+                .hnls_logo_products_left h1 a {
+                    display: inline-block;
+                }
+                .hnl_search {
+                    width: 100%;
+                }
+                .hnl_search input[type="search"] {
+                    width: 92%;
+                }
+                .top_brand_left {
+                    width: 100%;
+                    margin-bottom: 3%;
+                }
+                .snipcart-details input.button {
+                    width: 54%;
+                }
+                .agileits_hnlayouts_map_pos {
+                    width: 51%;
+                }
+                .login-form-grids {
+                    width: 71%;
+                }
+                .checkout-left-basket {
+                    width: 42%;
+                }
+                .agileinfo_single h2 {
+                    font-size: 1.2em;
+                }
+                .agileinfo_single_right_details {
+                    width: 73% !important;
+                    text-align: left;
+                }
+                h3.agileits-icons-title {
+                    font-size: 28px;
+                }
+                h3.icon-subheading {
+                    font-size: 25px;
+                }
+                .row {
+                    margin-right: 0;
+                    margin-left: 0;
+                }
+                .icon-box {
+                    margin: 0;
+                }
+                .skdslider .slide-desc>h3 {
+                    font-size: 24px;
+                }
+                .skdslider {
+                    height: 295px;
+                }
+                .skdslider .slide-desc>p a.more {
+                    font-size: 14px;
+                }
+                .skdslider {
+                    height: 281px;
+                }
+                .skdslider .slide-desc {
+                    bottom: 18%;
+                }
+                .skdslider {
+                    height: 254px;
+                }
+                .skdslider .slide-desc {
+                    bottom: 14%;
+                }
+                .skdslider .slide-desc>p {
+                    padding: 10px;
+                }
+            }

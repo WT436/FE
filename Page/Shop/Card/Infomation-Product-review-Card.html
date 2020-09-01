@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Infomation-Product-review-Card.css">
+    <link type="text/css" href="./jquery.exzoom.css" rel="stylesheet">
+    <link rel="stylesheet" href="/Page/Shop/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="./ViewImage.css">
+    <link rel="stylesheet" href="./CardProduct.css">
+    <link rel="stylesheet" href="./CommentBox.css">
+    <link rel="stylesheet" href="./HoiDap.css">
+    <link rel="stylesheet" href="./KhungBinhluanContentBox.css">
+    <link rel="stylesheet" href="./ReviewComent.css">
+    <link rel="stylesheet" href="./List-Group.css">
+    <link rel="stylesheet" href="./MoTaSanPham.css">
+    <link rel="stylesheet" href="./customer.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="AdminPageObserver">
+        <ul>
+            <li class="tooltip">
+                <a class="active" href="#item1">
+                    <i class="fa fa-home"></i>
+                </a>
+                <span class="tooltiptext">Thông tin cơ bản</span>
+            </li>
+            <li class="tooltip">
+                <a href="#item2"><i class="fa fa-home"></i></a>
+                <span class="tooltiptext">Sản Phẩm Tương Tự</span>
+            </li>
+            <li class="tooltip">
+                <a href="#item3"><i class="fa fa-home"></i></a>
+                <span class="tooltiptext">thông tin chi tiết</span>
+            </li>
+            <li class="tooltip">
+                <a href="#item4"><i class="fa fa-home"></i></a>
+                <span class="tooltiptext">mô tả san phẩm</span>
+            </li>
+            <li class="tooltip">
+                <a href="#item5"><i class="fa fa-home"></i></a>
+                <span class="tooltiptext">Sản Phẩm Bạn Đã Xem</span>
+            </li>
+            <li class="tooltip">
+                <a href="#item6"><i class="fa fa-home"></i></a>
+                <span class="tooltiptext">Tổng quan đánh giá </span>
+            </li>
+            <li class="tooltip">
+                <a href="#item7">
+                    <i class="fa fa-home"></i></a>
+                <span class="tooltiptext">Đánh Giá Sản Phẩm</span>
+            </li>
+            <li class="tooltip">
+                <a href="#item8"><i class="fa fa-home"></i></a>
+                <span class="tooltiptext">Câu Hỏi trực tiếp</span>
+            </li>
+            <li class="tooltip">
+                <a href="#item9"><i class="fa fa-home"></i></a>
+                <span class="tooltiptext">Đánh Giá & Bình Luận</span>
+            </li>
+        </ul>
+    </div>
+    <main>
+        <section id="item1">
+            <!-- Thông tin cơ bản -->
+            <div class="ContainerAll">
+                <div class="Img_review_Product_card">
+                    <ul class='exzoom_img_ul2'>
+                        <li>
+                            <a href="#"><img class="DataReviewImageProduct" src="/Page/Shop/IMG/93114864_238532614223784_6538662055426129920_n.jpg" onclick="openModal();" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="DataReviewImageProduct" src="/Page/Shop/IMG/93114864_238532614223784_6538662055426129920_n.jpg" onclick="openModal();" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="DataReviewImageProduct" src="/Page/Shop/IMG/93114864_238532614223784_6538662055426129920_n.jpg" onclick="openModal();" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="DataReviewImageProduct" src="/Page/Shop/IMG/93114864_238532614223784_6538662055426129920_n.jpg" onclick="openModal();" /></a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="DataReviewImageProduct" src="/Page/Shop/IMG/93114864_238532614223784_6538662055426129920_n.jpg" onclick="openModal();" />
+                                <i class="solutionImageView">9+</i>
+                            </a>
+                        </li>
+                        <li class="hidImageReview">
+                            <a href=""><img class="DataReviewImageProduct " src="/Page/Shop/IMG/93114864_238532614223784_6538662055426129920_n.jpg" onclick="openModal();" /></a>
+                        </li>
+                        <li class="hidImageReview">
+                            <a href=""><img class="DataReviewImageProduct " src="/Page/Shop/IMG/93114864_238532614223784_6538662055426129920_n.jpg" onclick="openModal();" /></a>
+                        </li>
+                        <li class="hidImageReview">
+                            <a href=""><img class="DataReviewImageProduct " src="/Page/Shop/IMG/93114864_238532614223784_6538662055426129920_n.jpg" onclick="openModal();" /></a>
+                        </li>
+                        <li class="hidImageReview">
+                            <a href=""><img class="DataReviewImageProduct " src="/Page/Shop/IMG/93114864_238532614223784_6538662055426129920_n.jpg" onclick="openModal();" /></a>
+                        </li>
+                        <li class="hidImageReview">
+                            <a href=""><img class="DataReviewImageProduct " src="/Page/Shop/IMG/93114864_238532614223784_6538662055426129920_n.jpg" onclick="openModal();" /></a>
+                        </li>
+                    </ul>
+                    <div id="myModal" class="modal">
+                        <span class="close cursor" onclick="closeModal();">&times;</span>
+                        <div class="modal-content">
+                            <div class="mySlides" onclick="chuyenDoi(this);">
+                                <div id="numbertext_ReviewImage"></div>
+                                <img id="img_ReviewImage" src="">
+                            </div>
+                            <div class="caption-container">
+                                <p id="caption_ReviewImage"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="exzoom" id="exzoom">
+
+                        <div class="exzoom_img_box" style="width: 300px;">
+                            <ul class='exzoom_img_ul'>
+                                <li><img src="/Page/Shop/IMG/93114864_238532614223784_6538662055426129920_n.jpg" /></li>
+                                <li><img src="/Page/Shop/IMG/93114864_238532614223784_6538662055426129920_n.jpg" /></li>
+                                <li><img src="/Page/Shop/IMG/93114864_238532614223784_6538662055426129920_n.jpg" /></li>
+                                <li><img src="/Page/Shop/IMG/93114864_238532614223784_6538662055426129920_n.jpg" /></li>
+                                <li><img src="/Page/Shop/IMG/93114864_238532614223784_6538662055426129920_n.jpg" /></li>
+                            </ul>
+                        </div>
+                        <div class="exzoom_nav"></div>
+                    </div>
+
+                </div>
+                <div class="Infomation_review_Product_card">
+                    <div class="Infomation_review_Product_card_1">
+                        <div class="Infomation_review_Product_card_1_name">Đồ Chơi Gỗ Mô Hình Vietoys Xe Cũi Thả Hình VT3P-0109
+                        </div>
+                        <div class="Infomation_review_Product_card_1_star">
+                            <ul>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star-o"></i></li>
+                                <li><i class="fa fa-star-o"></i></li>
+                                <li><i class="fa fa-star-o"></i></li>
+                                <li><i class="fa fa-star-o"></i></li>
+                            </ul>
+                            <a href="#">(Xem 296 đánh giá)</a>
+                        </div>
+                        <div class="Infomation_review_Product_card_1_End">
+                            <span>Thương Hiệu: <a href="#">12345678</a></span>
+                            <span>Top : <a href="#">12345678</a></span>
+                            <span>ID : <a href="#">12345678</a></span>
+                        </div>
+                    </div>
+                    <div class="Infomation_review_Product_card_2">
+                        <div class="infomation2_review_detail">
+                            <div class="infomation2_review_detail_Gia">
+                                <div><i class="fa fa-motorcycle"></i>
+                                    <b>Miễn phí giao tiêu chuẩn (tối đa 25k)</b> cho đơn hàng từ 249k
+                                    <a href="#">Xem chi tiết</a>
+                                </div>
+                                <p>Giá :<span>₫ 250.000.000</span></p>
+                                <p>Giảm giá :<span>45%</span></p>
+                                <p>Giá Gốc :<span>₫ 250.000.000</span></p>
+                                <p id="ketThucGIamGia">Giảm Giá kết thúc sau :
+                                    <b id="ThoiGianGIamGiaD">25</b> Ngày
+                                    <b id="ThoiGianGIamGiaH">25</b> Giờ
+                                    <b id="ThoiGianGIamGiaM">25</b> Phút
+                                    <b id="ThoiGianGIamGiaS">25</b> Giây
+                                </p>
+                                <script>
+                                    var GioiHan = new Date("2/31/2021 15:37:25").getTime();
+                                    var x = setInterval(function() {
+                                        var HienTai = new Date().getTime();
+                                        var ConLai = GioiHan - HienTai;
+                                        var days = Math.floor(ConLai / (1000 * 60 * 60 * 24));
+                                        var hours = Math.floor((ConLai % (1000 * 60 * 60 * 24)) / (1000 * 60 *
+                                            60));
+                                        var minutes = Math.floor((ConLai % (1000 * 60 * 60)) / (1000 * 60));
+                                        var seconds = Math.floor((ConLai % (1000 * 60)) / 1000);
+                                        document.getElementById("ThoiGianGIamGiaD").innerHTML = days;
+                                        document.getElementById("ThoiGianGIamGiaH").innerHTML = hours;
+                                        document.getElementById("ThoiGianGIamGiaM").innerHTML = minutes;
+                                        document.getElementById("ThoiGianGIamGiaS").innerHTML = seconds;
+                                        if (ConLai < 0) {
+                                            clearInterval(x);
+                                            document.getElementById("ketThucGIamGia").innerHTML =
+                                                "Thời gian Giảm Giá Đã Kết Thúc";
+                                        }
+                                    }, 1000);
+                                </script>
+                                <section class="OrderProductViewHome"><span style="width: 10%;"></span>0</section>
+                            </div>
+
+                            <div class="infomation2_review_detail_Gia">
+                                <ul>
+                                    <li>a</li>
+                                    <li>x</li>
+                                    <li>x</li>
+                                    <li>x</li>
+                                </ul>
+                            </div>
+                            <div class="infomation2_review_detail_Gia2">
+                                <form action="">
+                                    <ul class="infomation2_review_detail_Gia2_Number">
+                                        <li>
+                                            <a onclick="NumberDown()"> <i class="fa fa-backward"></i> </a>
+                                        </li>
+                                        <li><input id="NumberOrder" type="number" max="100" min="0" name="" value="0" id="">
+                                        </li>
+                                        <li>
+                                            <a onclick="NumberUp()"><i class="fa fa-forward"></i></a>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="rainbow-button" alt="Mua Sản phẩm"></a>
+                                </form>
+                                <div class="infomation2SuppelierHome"></div>
+                            </div>
+                            <div class="infomation2_review_detail_Gia3">
+                                <div><i class="fa fa-map-marker"></i>
+                                    <b>Thêm địa chỉ , nhận hàng mọi nơi</b>
+                                    <a href="#">Cập nhật ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Infomation_review_Product_card_3">
+                            <div class="infomation2_review_detail_Gia4">
+                                <h3>Comboo khuyến mãi</h3>
+                                <div class="images">
+                                    <a id="Selectmage1" href="" title="" class="image ">
+                                        <img src="/Page/Shop/IMG/93114864_238532614223784_6538662055426129920_n.jpg" alt="">
+                                    </a>
+                                    <p class="pluss">+</p>
+                                    <a id="Selectmage2" href="" title="" class="image "><img src="/Page/Shop/IMG/93114864_238532614223784_6538662055426129920_n.jpg" alt=""></a>
+                                    <p class="pluss">+</p>
+                                    <a id="Selectmage3" href="" title="" class="image "><img src="/Page/Shop/IMG/93114864_238532614223784_6538662055426129920_n.jpg" alt=""></a>
+                                    <p class="pluss">+</p>
+                                    <a id="Selectmage4" href="" title="" class="image "><img src="/Page/Shop/IMG/93114864_238532614223784_6538662055426129920_n.jpg" alt=""></a>
+                                    <p class="pluss">+</p>
+                                    <a id="Selectmage5" href="" title="" class="image "><img src="/Page/Shop/IMG/93114864_238532614223784_6538662055426129920_n.jpg" alt=""></a>
+
+                                </div>
+                                <form action="">
+                                    <div class="box">
+                                        <div>
+                                            <label>
+                                                <input type="checkbox" checked="true" readonly="readonly" name="">
+                                                <span></span>
+                                                <b class="activeProDuctName">Sản Phẩm Hiện Tại</b>
+                                                Dồ Chơi Gỗ Mô Hình Vietoys Xe Cũi ơi Gỗ Gỗ Mô Hình Vietoys...
+                                                <i class="GiaTienHienTaiCuaKhuyenMai">₫ 10.000.000</i>
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <label>
+                                                <input type="checkbox" checked name=""
+                                                    onclick="MoneyTotal('ProductDefault2','Selectmage2',10000000);"
+                                                    id="ProductDefault2">
+                                                <span></span>
+                                                Remember Me
+                                                <i class="GiaTienHienTaiCuaKhuyenMai">₫ 10.000.000</i>
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <label>
+                                                <input type="checkbox" checked name=""
+                                                    onclick="MoneyTotal('ProductDefault3','Selectmage3',10000000);"
+                                                    id="ProductDefault3">
+                                                <span></span>
+                                                Remember Me
+                                                <i class="GiaTienHienTaiCuaKhuyenMai">₫ 10.000.000</i>
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <label>
+                                                <input type="checkbox" checked name=""
+                                                    onclick="MoneyTotal('ProductDefault4','Selectmage4',10000000);"
+                                                    id="ProductDefault4">
+                                                <span></span>
+                                                Remember Me
+                                                <i class="GiaTienHienTaiCuaKhuyenMai">₫ 10.000.000</i>
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <label>
+                                                <input type="checkbox" checked name=""
+                                                    onclick="MoneyTotal('ProductDefault5','Selectmage5',10000000);"
+                                                    id="ProductDefault5">
+                                                <span></span>
+                                                Remember Me
+                                                <i class="GiaTienHienTaiCuaKhuyenMai">₫ 10.000.000</i>
+                                            </label>
+                                        </div>
+                                        <div style="margin-top:20px">
+                                            <label>
+                                                Tổng Tiền : <b id="TongThanhToanSanPhamXemThem"
+                                                    class="activeProDuctName">0</b>
+                                                VNĐ
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="shoot"><span></span> Đặt Hàng</a>
+                                </form>
+                                <p id="ketThucKhuyenMai">Giảm Giá kết thúc sau :
+                                    <b id="ThoiGianKhuyenMaiD">25</b> Ngày
+                                    <b id="ThoiGianKhuyenMaiH">25</b> Giờ
+                                    <b id="ThoiGianKhuyenMaiM">25</b> Phút
+                                    <b id="ThoiGianKhuyenMaiS">25</b> Giây
+                                </p>
+                                <script>
+                                    var GioiHan2 = new Date("2/31/2022 15:37:25").getTime();
+                                    var x = setInterval(function() {
+                                        var HienTai2 = new Date().getTime();
+                                        var ConLai2 = GioiHan2 - HienTai2;
+                                        var days2 = Math.floor(ConLai2 / (1000 * 60 * 60 * 24));
+                                        var hours2 = Math.floor((ConLai2 % (1000 * 60 * 60 * 24)) / (1000 * 60 *
+                                            60));
+                                        var minutes2 = Math.floor((ConLai2 % (1000 * 60 * 60)) / (1000 * 60));
+                                        var seconds2 = Math.floor((ConLai2 % (1000 * 60)) / 1000);
+                                        document.getElementById("ThoiGianKhuyenMaiD").innerHTML = days2;
+                                        document.getElementById("ThoiGianKhuyenMaiH").innerHTML = hours2;
+                                        document.getElementById("ThoiGianKhuyenMaiM").innerHTML = minutes2;
+                                        document.getElementById("ThoiGianKhuyenMaiS").innerHTML = seconds2;
+                                        if (ConLai2 < 0) {
+                                            clearInterval(x);
+                                            document.getElementById("ketThucKhuyenMai").innerHTML =
+                                                "Thời gian Khuyến mại Đã Kết Thúc";
+                                        }
+                                    }, 1000);
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="item2">
+            <!-- Sản Phẩm Tương Tự -->
+            <div class="ContainerAll">
+                <div class="TitleCap">Sản Phẩm Tương Tự</div>
+                <div class="Profile">
+                    <img src="/Page/Shop/IMG/93114864_238532614223784_6538662055426129920_n.jpg">
+                    <div class="ProfileDetail ">
+                        <div class="closes">30%</div>
+                        <h2>
+                            <p style="cursor:pointer" title="k.Ten">Khẩu trang trẻ em - Hộp 50 chiếc - nhiều màu sắc</p>
+                            <span class="stars">
+                                <i class="fa fa-star blue-star" aria-hidden="true"></i> <i class="fa fa-star gray-star"
+                                    aria-hidden="true"></i>
+                            </span>
+                        </h2>
+                        <p><span>₫ 10.000.000</span><i class="fa fa-arrow-right"></i>₫ 10.000.000</p>
+                        <div class="OrderProductViewHome"><span style="width: 10%;"></span>Vừa lên kệ</div>
+                        <a href="#" class="GoToCartProduct"><span data-text="Đặt Hàng">Đặt Hàng</span></a>
+                        <ul>
+                            <li><i class="fa fa-heart">10</i></li>
+                            <li><i class="fa fa-heart">20</i></li>
+                            <li><i class="fa fa-comment">30</i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="Profile">
+                    <img src="/Page/Shop/IMG/93114864_238532614223784_6538662055426129920_n.jpg">
+                    <div class="ProfileDetail ">
+                        <div class="closes">30%</div>
+                        <h2>
+                            <p style="cursor:pointer" title="k.Ten">Khẩu trang trẻ em - Hộp 50 chiếc - nhiều màu sắc</p>
+                            <span class="stars">
+                                <i class="fa fa-star blue-star" aria-hidden="true"></i> <i class="fa fa-star gray-star"
+                                    aria-hidden="true"></i>
+                            </span>
+                        </h2>
+                        <p><span>₫ 10.000.000</span><i class="fa fa-arrow-right"></i>₫ 10.000.000</p>
+                        <div class="OrderProductViewHome"><span style="width: 10%;"></span>Vừa lên kệ</div>
+                        <a href="#" class="GoToCartProduct"><span data-text="Đặt Hàng">Đặt Hàng</span></a>
+                        <ul>
+                            <li><i class="fa fa-heart">10</i></li>
+                            <li><i class="fa fa-heart">20</i></li>
+                            <li><i class="fa fa-comment">30</i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="Profile">
+                    <img src="/Page/Shop/IMG/93114864_238532614223784_6538662055426129920_n.jpg">
+                    <div class="ProfileDetail ">
+                        <div class="closes">30%</div>
+                        <h2>
+                            <p style="cursor:pointer" title="k.Ten">Khẩu trang trẻ em - Hộp 50 chiếc - nhiều màu sắc</p>
+                            <span class="stars">
+                                <i class="fa fa-star blue-star" aria-hidden="true"></i> <i class="fa fa-star gray-star"
+                                    aria-hidden="true"></i>
+                            </span>
+                        </h2>
+                        <p><span>₫ 10.000.000</span><i class="fa fa-arrow-right"></i>₫ 10.000.000</p>
+                        <div class="OrderProductViewHome"><span style="width: 10%;"></span>Vừa lên kệ</div>
+                        <a href="#" class="GoToCartProduct"><span data-text="Đặt Hàng">Đặt Hàng</span></a>
+                        <ul>
+                            <li><i class="fa fa-heart">10</i></li>
+                            <li><i class="fa fa-heart">20</i></li>
+                            <li><i class="fa fa-comment">30</i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="Profile">
+                    <img src="/Page/Shop/IMG/93114864_238532614223784_6538662055426129920_n.jpg">
+                    <div class="ProfileDetail ">
+                        <div class="closes">30%</div>
+                        <h2>
+                            <p style="cursor:pointer" title="k.Ten">Khẩu trang trẻ em - Hộp 50 chiếc - nhiều màu sắc</p>
+                            <span class="stars">
+                                <i class="fa fa-star blue-star" aria-hidden="true"></i> <i class="fa fa-star gray-star"
+                                    aria-hidden="true"></i>
+                            </span>
+                        </h2>
+                        <p><span>₫ 10.000.000</span><i class="fa fa-arrow-right"></i>₫ 10.000.000</p>
+                        <div class="OrderProductViewHome"><span style="width: 10%;"></span>Vừa lên kệ</div>
+                        <a href="#" class="GoToCartProduct"><span data-text="Đặt Hàng">Đặt Hàng</span></a>
+                        <ul>
+                            <li><i class="fa fa-heart">10</i></li>
+                            <li><i class="fa fa-heart">20</i></li>
+                            <li><i class="fa fa-comment">30</i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="Profile">
+                    <img src="/Page/Shop/IMG/93114864_238532614223784_6538662055426129920_n.jpg">
+                    <div class="ProfileDetail ">
+                        <div class="closes">30%</div>
+                        <h2>
+                            <p style="cursor:pointer" title="k.Ten">Khẩu trang trẻ em - Hộp 50 chiếc - nhiều màu sắc</p>
+                            <span class="stars">
+                                <i class="fa fa-star blue-star" aria-hidden="true"></i> <i class="fa fa-star gray-star"
+                                    aria-hidden="true"></i>
+                            </span>
+                        </h2>
+                        <p><span>₫ 10.000.000</span><i class="fa fa-arrow-right"></i>₫ 10.000.000</p>
+                        <div class="OrderProductViewHome"><span style="width: 10%;"></span>Vừa lên kệ</div>
+                        <a href="#" class="GoToCartProduct"><span data-text="Đặt Hàng">Đặt Hàng</span></a>
+                        <ul>
+                            <li><i class="fa fa-heart">10</i></li>
+                            <li><i class="fa fa-heart">20</i></li>
+                            <li><i class="fa fa-comment">30</i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="Profile">
+                    <img src="/Page/Shop/IMG/93114864_238532614223784_6538662055426129920_n.jpg">
+                    <div class="ProfileDetail ">
+                        <div class="closes">30%</div>
+                        <h2>
+                            <p style="cursor:pointer" title="k.Ten">Khẩu trang trẻ em - Hộp 50 chiếc - nhiều màu sắc</p>
+                            <span class="stars">
+                                <i class="fa fa-star blue-star" aria-hidden="true"></i> <i class="fa fa-star gray-star"
+                                    aria-hidden="true"></i>
+                            </span>
+                        </h2>
+                        <p><span>₫ 10.000.000</span><i class="fa fa-arrow-right"></i>₫ 10.000.000</p>
+                        <div class="OrderProductViewHome"><span style="width: 10%;"></span>Vừa lên kệ</div>
+                        <a href="#" class="GoToCartProduct"><span data-text="Đặt Hàng">Đặt Hàng</span></a>
+                        <ul>
+                            <li><i class="fa fa-heart">10</i></li>
+                            <li><i class="fa fa-heart">20</i></li>
+                            <li><i class="fa fa-comment">30</i></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="item3">
+            <!-- co mot the div dong o day -->
+            <!-- thông tin chi tiết -->
+            <div class="ContainerAll">
+                <div class="TitleCap">Thông tin chi tiết</div>
+                <table id="customers">
+                    <tr>
+                        <th>Danh Mục Chi Tiết</th>
+                        <th>Đến Ngay</th>
+                    </tr>
+                    <tr>
+                        <td>Chi Tiết Sản Phẩm</td>
+                        <td><a href="#">Đi Nào</a></td>
+                    </tr>
+                    <tr>
+                        <td>Chi Tiết Sản Phẩm</td>
+                        <td><a href="#">Đi Nào</a></td>
+                    </tr>
+                    <tr>
+                        <td>Chi Tiết Sản Phẩm</td>
+                        <td><a href="#">Đi Nào</a></td>
+                    </tr>
+                    <tr>
+                        <td>Chi Tiết Sản Phẩm</td>
+                        <td><a href="#">Đi Nào</a></td>
+                    </tr>
+                    <tr>
+                        <td>Chi Tiết Sản Phẩm</td>
+                        <td><a href="#">Đi Nào</a></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section id="item4">
+            <!-- mô tả san phẩm -->
+            <div class="ContainerAll">
+                <div class="TitleCap">mô tả san phẩm</div>
+                <div class="content">
+                    <div class="OpacFooter">
+                        <div class="chiDinhNoiDungHienThi MotPhanNoiDung ">
+                            <div>
+                                <p><strong>NGHĨ GIÀU VÀ LÀM GIÀU</strong></p>
+                                <p>Think and Grow Rich - Nghĩ giàu và Làm giàu là một trong những cuốn sách bán chạy nhất mọi thời đại. Đã hơn 60 triệu bản được phát hành với gần trăm ngôn ngữ trên toàn thế giới và được công nhận là cuốn sách tạo ra nhiều
+                                    triệu phú hơn, một cuốn sách truyền cảm hứng thành công nhiều hơn bất cứ cuốn sách kinh doanh nào trong lịch sử. Tác phẩm này đã giúp tác giả của nó, Napoleon Hill, được tôn vinh bằng danh hiệu “người tạo ra những nhà
+                                    triệu phú”. Đây cũng là cuốn sách hiếm hoi được đứng trong top của rất nhiều bình chọn theo nhiều tiêu chí khác nhau - bình chọn của độc giả, của giới chuyên môn, của báo chí. Lý do để Think and Grow Rich - Nghĩ giàu
+                                    và Làm giàu có được vinh quang này thật hiển nhiên và dễ hiểu: Bằng việc đọc và áp dụng những phương pháp đơn giản, cô đọng này vào đời sống của mỗi cá nhân mà đã có hàng ngàn người trên thế giới trở thành triệu phú
+                                    và thành công bền vững.
+                                </p>
+                            </div>
+                            <div class="gradient"></div>
+                        </div><a class="btn-more" id="ThisNoKhongHoatDong" onclick="HienThiTatCa()">Xem Thêm Nội
+                            Dung</a>
+                    </div>
+                </div>
+                <script>
+                    function HienThiTatCa() {
+                        var thisHienThiTatCa = this;
+                        var element = document.querySelector(".chiDinhNoiDungHienThi");
+                        if (element.classList.contains('TatCaNoiDung')) {
+                            element.classList.remove("TatCaNoiDung");
+                            document.getElementById('ThisNoKhongHoatDong').innerHTML = "Xem Thêm Nội Dung ";
+                            element.classList.add("MotPhanNoiDung");
+                        } else {
+                            element.classList.remove("MotPhanNoiDung");
+                            element.classList.add("TatCaNoiDung");
+                            document.getElementById('ThisNoKhongHoatDong').innerHTML = "Ẩn Đi Nội Dung ";
+
+                        }
+
+                    }
+                </script>
+            </div>
+        </section>
+        <section id="item5">
+            <!-- Sản Phẩm Bạn Đã Xem -->
+            <div class="ContainerAll">
+                <div class="TitleCap">Sản Phẩm Bạn Đã Xem</div>
+                <div class="Profile">
+                    <img src="/Page/Shop/IMG/93114864_238532614223784_6538662055426129920_n.jpg">
+                    <div class="ProfileDetail ">
+                        <div class="closes">30%</div>
+                        <h2>
+                            <p style="cursor:pointer" title="k.Ten">Khẩu trang trẻ em - Hộp 50 chiếc - nhiều màu sắc</p>
+                            <span class="stars">
+                                <i class="fa fa-star blue-star" aria-hidden="true"></i> <i class="fa fa-star gray-star"
+                                    aria-hidden="true"></i>
+                            </span>
+                        </h2>
+                        <p><span>₫ 10.000.000</span><i class="fa fa-arrow-right"></i>₫ 10.000.000</p>
+                        <div class="OrderProductViewHome"><span style="width: 10%;"></span>Vừa lên kệ</div>
+                        <a href="#" class="GoToCartProduct"><span data-text="Đặt Hàng">Đặt Hàng</span></a>
+                        <ul>
+                            <li><i class="fa fa-heart">10</i></li>
+                            <li><i class="fa fa-heart">20</i></li>
+                            <li><i class="fa fa-comment">30</i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="Profile">
+                    <img src="/Page/Shop/IMG/93114864_238532614223784_6538662055426129920_n.jpg">
+                    <div class="ProfileDetail ">
+                        <div class="closes">30%</div>
+                        <h2>
+                            <p style="cursor:pointer" title="k.Ten">Khẩu trang trẻ em - Hộp 50 chiếc - nhiều màu sắc</p>
+                            <span class="stars">
+                                <i class="fa fa-star blue-star" aria-hidden="true"></i> <i class="fa fa-star gray-star"
+                                    aria-hidden="true"></i>
+                            </span>
+                        </h2>
+                        <p><span>₫ 10.000.000</span><i class="fa fa-arrow-right"></i>₫ 10.000.000</p>
+                        <div class="OrderProductViewHome"><span style="width: 10%;"></span>Vừa lên kệ</div>
+                        <a href="#" class="GoToCartProduct"><span data-text="Đặt Hàng">Đặt Hàng</span></a>
+                        <ul>
+                            <li><i class="fa fa-heart">10</i></li>
+                            <li><i class="fa fa-heart">20</i></li>
+                            <li><i class="fa fa-comment">30</i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="Profile">
+                    <img src="/Page/Shop/IMG/93114864_238532614223784_6538662055426129920_n.jpg">
+                    <div class="ProfileDetail ">
+                        <div class="closes">30%</div>
+                        <h2>
+                            <p style="cursor:pointer" title="k.Ten">Khẩu trang trẻ em - Hộp 50 chiếc - nhiều màu sắc</p>
+                            <span class="stars">
+                                <i class="fa fa-star blue-star" aria-hidden="true"></i> <i class="fa fa-star gray-star"
+                                    aria-hidden="true"></i>
+                            </span>
+                        </h2>
+                        <p><span>₫ 10.000.000</span><i class="fa fa-arrow-right"></i>₫ 10.000.000</p>
+                        <div class="OrderProductViewHome"><span style="width: 10%;"></span>Vừa lên kệ</div>
+                        <a href="#" class="GoToCartProduct"><span data-text="Đặt Hàng">Đặt Hàng</span></a>
+                        <ul>
+                            <li><i class="fa fa-heart">10</i></li>
+                            <li><i class="fa fa-heart">20</i></li>
+                            <li><i class="fa fa-comment">30</i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="Profile">
+                    <img src="/Page/Shop/IMG/93114864_238532614223784_6538662055426129920_n.jpg">
+                    <div class="ProfileDetail ">
+                        <div class="closes">30%</div>
+                        <h2>
+                            <p style="cursor:pointer" title="k.Ten">Khẩu trang trẻ em - Hộp 50 chiếc - nhiều màu sắc</p>
+                            <span class="stars">
+                                <i class="fa fa-star blue-star" aria-hidden="true"></i> <i class="fa fa-star gray-star"
+                                    aria-hidden="true"></i>
+                            </span>
+                        </h2>
+                        <p><span>₫ 10.000.000</span><i class="fa fa-arrow-right"></i>₫ 10.000.000</p>
+                        <div class="OrderProductViewHome"><span style="width: 10%;"></span>Vừa lên kệ</div>
+                        <a href="#" class="GoToCartProduct"><span data-text="Đặt Hàng">Đặt Hàng</span></a>
+                        <ul>
+                            <li><i class="fa fa-heart">10</i></li>
+                            <li><i class="fa fa-heart">20</i></li>
+                            <li><i class="fa fa-comment">30</i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="Profile">
+                    <img src="/Page/Shop/IMG/93114864_238532614223784_6538662055426129920_n.jpg">
+                    <div class="ProfileDetail ">
+                        <div class="closes">30%</div>
+                        <h2>
+                            <p style="cursor:pointer" title="k.Ten">Khẩu trang trẻ em - Hộp 50 chiếc - nhiều màu sắc</p>
+                            <span class="stars">
+                                <i class="fa fa-star blue-star" aria-hidden="true"></i> <i class="fa fa-star gray-star"
+                                    aria-hidden="true"></i>
+                            </span>
+                        </h2>
+                        <p><span>₫ 10.000.000</span><i class="fa fa-arrow-right"></i>₫ 10.000.000</p>
+                        <div class="OrderProductViewHome"><span style="width: 10%;"></span>Vừa lên kệ</div>
+                        <a href="#" class="GoToCartProduct"><span data-text="Đặt Hàng">Đặt Hàng</span></a>
+                        <ul>
+                            <li><i class="fa fa-heart">10</i></li>
+                            <li><i class="fa fa-heart">20</i></li>
+                            <li><i class="fa fa-comment">30</i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="Profile">
+                    <img src="/Page/Shop/IMG/93114864_238532614223784_6538662055426129920_n.jpg">
+                    <div class="ProfileDetail ">
+                        <div class="closes">30%</div>
+                        <h2>
+                            <p style="cursor:pointer" title="k.Ten">Khẩu trang trẻ em - Hộp 50 chiếc - nhiều màu sắc</p>
+                            <span class="stars">
+                                <i class="fa fa-star blue-star" aria-hidden="true"></i> <i class="fa fa-star gray-star"
+                                    aria-hidden="true"></i>
+                            </span>
+                        </h2>
+                        <p><span>₫ 10.000.000</span><i class="fa fa-arrow-right"></i>₫ 10.000.000</p>
+                        <div class="OrderProductViewHome"><span style="width: 10%;"></span>Vừa lên kệ</div>
+                        <a href="#" class="GoToCartProduct"><span data-text="Đặt Hàng">Đặt Hàng</span></a>
+                        <ul>
+                            <li><i class="fa fa-heart">10</i></li>
+                            <li><i class="fa fa-heart">20</i></li>
+                            <li><i class="fa fa-comment">30</i></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="item6">
+            <!-- Tổng quan đánh giá sản phẩm -->
+            <div class="ContainerAll">
+                <div class="TitleCap">Tổng quan đánh giá sản phẩm</div>
+                <div class="ReViewCommon">
+                    <div class="ReViewCommonDanhGia">
+                        <h4 class="ReViewCommontitle">Đánh giá trung bình</h4>
+                        <p class="ReViewCommonscore">4.5/5</p>
+                        <p class="ReViewCommonStat" style="font-size: 40px;">
+                            <i class=" fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class=" fa fa-star"></i>
+                            <span class=" oneStar">
+                                <i class=" fa fa-star-o"></i>
+                                <i class=" fa fa-star" style="width: 50%;"></i>
+                            </span>
+                            <i class=" fa fa-star-o"></i>
+                        </p>
+                        <a href="#" class="number">(100 nhận xét)</a>
+                    </div>
+                    <div>
+                        <div class="star-progress-bar">
+                            <p class="star-number"><span>5</span>
+                                <i class="fa fa-star ReViewCommonStat"></i>
+                                <span></span>
+                            </p>
+                            <div class="progress-bar">
+                                <div class="progress progress-5" style="width: 67%;"></div>
+                            </div>
+                            <p class="percent">67%</p>
+                        </div>
+                        <div class="star-progress-bar">
+                            <p class="star-number"><span>4</span>
+                                <i class="fa fa-star ReViewCommonStat"></i>
+                            </p>
+                            <div class="progress-bar">
+                                <div class="progress progress-4" style="width: 14%;"></div>
+                            </div>
+                            <p class="percent">14%</p>
+                        </div>
+                        <div class="star-progress-bar">
+                            <p class="star-number"><span>3</span>
+                                <i class="fa fa-star ReViewCommonStat"></i>
+                            </p>
+                            <div class="progress-bar">
+                                <div class="progress progress-3" style="width: 10%;"></div>
+                            </div>
+                            <p class="percent">10%</p>
+                        </div>
+                        <div class="star-progress-bar">
+                            <p class="star-number"><span>2</span>
+                                <i class="fa fa-star ReViewCommonStat"></i>
+                            </p>
+                            <div class="progress-bar">
+                                <div class="progress progress-2" style="width: 4%;"></div>
+                            </div>
+                            <p class="percent">4%</p>
+                        </div>
+                        <div class="star-progress-bar">
+                            <p class="star-number"><span>1</span>
+                                <i class="fa fa-star ReViewCommonStat"></i>
+                            </p>
+                            <div class="progress-bar">
+                                <div class="progress-1" style="width: 5%;"></div>
+                            </div>
+                            <p class="percent">5%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="item7">
+            <!-- Đánh Giá Sản Phẩm -->
+            <div class="ContainerAll">
+                <div class="TitleCap">Đánh Giá Sản Phẩm</div>
+                <div class="boxComment">
+                    <h2>Đánh giá sao</h2>
+                    <div class="rating">
+                        <input type="radio" name="StartDanhGia" id="star1"><label for="star1"></label>
+                        <input type="radio" name="StartDanhGia" id="star2"><label for="star2"></label>
+                        <input type="radio" name="StartDanhGia" id="star3"><label for="star3"></label>
+                        <input type="radio" name="StartDanhGia" id="star4"><label for="star4"></label>
+                        <input type="radio" name="StartDanhGia" id="star5"><label for="star5"></label>
+                    </div>
+                    <form action="">
+                        <textarea placeholder="Đánh Giá ngay"></textarea>
+                        <div class="btnCommnet">
+                            <input type="submit" value="Comment">
+                            <button id="clear">Hủy</button>
+                            <input type="file" value="Comment" title="Ảnh Phản Hồi">
+                        </div>
+                    </form>
+                    <p class="HnHoiDapanhcuaBan ">
+                        <img src="/Mảnh ghép css/Repository/IMG/93114864_238532614223784_6538662055426129920_n.jpg" alt="">
+                        <img src="/Mảnh ghép css/Repository/IMG/93114864_238532614223784_6538662055426129920_n.jpg" alt="">
+                        <img src="/Mảnh ghép css/Repository/IMG/93114864_238532614223784_6538662055426129920_n.jpg" alt="">
+                        <img src="/Mảnh ghép css/Repository/IMG/93114864_238532614223784_6538662055426129920_n.jpg" alt="">
+                        <img src="/Mảnh ghép css/Repository/IMG/93114864_238532614223784_6538662055426129920_n.jpg" alt="">
+                        <img src="/Mảnh ghép css/Repository/IMG/93114864_238532614223784_6538662055426129920_n.jpg" alt="">
+                        <img class="HnHoiDapanhcuaBanActive" src="/Mảnh ghép css/Repository/IMG/93114864_238532614223784_6538662055426129920_n.jpg" alt="">
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="item8">
+            <!-- Câu Hỏi trực tiếp -->
+            <div class="ContainerAll">
+                <div class="TitleCap">Câu Hỏi trực tiếp</div>
+                <div class="HnHoiDap">
+                    <div class="container">
+                        <div class="HnHoiDapAvata">
+                            <p><img class="HnHoiDapAvataOnline" src="/Mảnh ghép css/Repository/IMG/93114864_238532614223784_6538662055426129920_n.jpg" alt="">
+                            </p>
+                            <div class="HnHoiDapNoiDung">
+                                <p class="HnHoiDapCauHoi">Câu Hỏi</p>
+                                <p class="HnHoiDapCauTraLoi"> Câu Trả Lời</p>
+                                <p class="HnHoiDapNgayTraLoi">Ngày Trả Lời 20/07/2020</p>
+                                <div class="HnHoiDapThaoTac">
+                                    <a class=" HnHoiDapThaoTacThea">
+                                        <i class=" fa fa-thumbs-o-up"></i>Thích (20)
+                                    </a>
+                                    <a class=" HnHoiDapThaoTacThea">
+                                        <i class=" fa fa-thumbs-o-down"></i>Thích (20)
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="" class=" HnHoiDapAllRep">
+                            Xem tất cả các câu hỏi
+                        </a>
+                        <div class="HnHoiDapAllSend">
+                            <div class="HnHoiDapAllSendInput">
+                                <input type="text" placeholder="Câu hỏi của bạn lien quan đến sản phẩm này..." value="">
+                            </div>
+                            <button>Gửi câu hỏi</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="item9">
+            <!-- Đánh Giá & Bình Luận (5N) -->
+            <div class="ContainerAll">
+                <div class="TitleCap">Đánh Giá & Bình Luận (5N)</div>
+                <div class="HnHoiDap">
+                    <h4 class="HnHoiDapTitle">Lọc Đánh Giá</h4>
+                    <div class="HnHoiDapSelect">
+                        <div class="select">
+                            <select name="format">
+                                <option selected disabled>Sắp Xếp</option>
+                                <option value="pdf">Số Sao</option>
+                                <option value="txt">Thích</option>
+                                <option value="epub">Không Thích</option>
+                                <option value="fb2">fb2</option>
+                                <option value="mobi">mobi</option>
+                            </select>
+                        </div>
+                        <div class="select">
+                            <select name="format">
+                                <option selected disabled>Lọc</option>
+                                <option value="pdf">PDF</option>
+                                <option value="txt">txt</option>
+                                <option value="epub">ePub</option>
+                                <option value="fb2">fb2</option>
+                                <option value="mobi">mobi</option>
+                            </select>
+                        </div>
+                        <div class="select">
+                            <select name="format">
+                                <option selected disabled>Khác</option>
+                                <option value="pdf">PDF</option>
+                                <option value="txt">txt</option>
+                                <option value="epub">ePub</option>
+                                <option value="fb2">fb2</option>
+                                <option value="mobi">mobi</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="HnHoiDapAvata">
+                            <p><img class="HnHoiDapAvataOnline" src="/Mảnh ghép css/Repository/IMG/93114864_238532614223784_6538662055426129920_n.jpg" alt="">
+                            </p>
+                            <div class="HnHoiDapNoiDung">
+                                <p class="HnHoiDapCauHoi">
+                                    Trần Hải Nam
+                                </p>
+                                <p class="HnHoiDapOderProduct HnHoiDapOderProductFail"><i class="fa fa-shield"></i> Đã Mua
+                                </p>
+                                <div class="HnHoiDapStart">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star-o"></i></li>
+                                    <li><i class="fa fa-star-o"></i></li>
+                                    <li><i class="fa fa-star-o"></i></li>
+                                    <b>Hài Lòng</b>
+                                </div>
+                                <p class="HnHoiDapCauTraLoi"> Câu Trả LờiCâu Trả Lời</p>
+                                <p class="HnHoiDapNgayTraLoi">Ngày Trả Lời 20/07/2020</p>
+                                <p class="HnHoiDapanhcuaBan ">
+                                    <img src="/Mảnh ghép css/Repository/IMG/93114864_238532614223784_6538662055426129920_n.jpg" alt="">
+                                    <img src="/Mảnh ghép css/Repository/IMG/93114864_238532614223784_6538662055426129920_n.jpg" alt="">
+                                    <img src="/Mảnh ghép css/Repository/IMG/93114864_238532614223784_6538662055426129920_n.jpg" alt="">
+                                    <img class="HnHoiDapanhcuaBanActive" src="/Mảnh ghép css/Repository/IMG/93114864_238532614223784_6538662055426129920_n.jpg" alt="">
+                                    <img class="HnHoiDapanhcuaBanActive" src="/Mảnh ghép css/Repository/IMG/93114864_238532614223784_6538662055426129920_n.jpg" alt="">
+                                    <img class="HnHoiDapanhcuaBanActive" src="/Mảnh ghép css/Repository/IMG/93114864_238532614223784_6538662055426129920_n.jpg" alt="">
+                                    <img class="HnHoiDapanhcuaBanActive" src="/Mảnh ghép css/Repository/IMG/93114864_238532614223784_6538662055426129920_n.jpg" alt="">
+                                </p>
+                                <div class="HnHoiDapThaoTac">
+                                    <a class=" HnHoiDapThaoTacThea ">
+                                        <i class=" fa fa-thumbs-up" style="color: red;"></i>(20)
+                                    </a>
+                                    <a class=" HnHoiDapThaoTacThea">
+                                        <i class=" fa fa-thumbs-o-down"></i>(20)
+                                    </a>
+                                    <a class=" HnHoiDapThaoTacThea">
+                                        <i class=" fa fa-comment"></i>(20)
+                                    </a>
+                                    <div class="HnHoiDapbox">
+                                        <div class="HnHoiDaptoggle"><span></span></div>
+                                        <p>
+                                            <div class="container">
+                                                <!-- comment -->
+                                                <div class="HnHoiDapAvata">
+                                                    <p><img class="HnHoiDapAvataOnline" src="/Mảnh ghép css/Repository/IMG/93114864_238532614223784_6538662055426129920_n.jpg" alt="">
+                                                    </p>
+                                                    <div class="HnHoiDapNoiDung">
+                                                        <p class="HnHoiDapCauHoi">Trần Hải Nam</p>
+                                                        <p class="HnHoiDapCauTraLoi"> Câu Trả LờiCâu Trả Lời</p>
+                                                        <p class="HnHoiDapNgayTraLoi">Ngày Trả Lời 20/07/2020</p>
+                                                        <p class="HnHoiDapanhcuaBan ">
+                                                            <img src="/Mảnh ghép css/Repository/IMG/93114864_238532614223784_6538662055426129920_n.jpg" alt="">
+                                                            <img src="/Mảnh ghép css/Repository/IMG/93114864_238532614223784_6538662055426129920_n.jpg" alt="">
+                                                            <img src="/Mảnh ghép css/Repository/IMG/93114864_238532614223784_6538662055426129920_n.jpg" alt="">
+                                                            <img class="HnHoiDapanhcuaBanActive" src="/Mảnh ghép css/Repository/IMG/93114864_238532614223784_6538662055426129920_n.jpg" alt="">
+                                                            <img class="HnHoiDapanhcuaBanActive" src="/Mảnh ghép css/Repository/IMG/93114864_238532614223784_6538662055426129920_n.jpg" alt="">
+                                                            <img class="HnHoiDapanhcuaBanActive" src="/Mảnh ghép css/Repository/IMG/93114864_238532614223784_6538662055426129920_n.jpg" alt="">
+                                                            <img class="HnHoiDapanhcuaBanActive" src="/Mảnh ghép css/Repository/IMG/93114864_238532614223784_6538662055426129920_n.jpg" alt="">
+                                                        </p>
+                                                        <div class="HnHoiDapThaoTac">
+                                                            <a class=" HnHoiDapThaoTacThea">
+                                                                <i class=" fa fa-thumbs-o-up"></i>(20)
+                                                            </a>
+                                                            <a class=" HnHoiDapThaoTacThea">
+                                                                <i class=" fa fa-thumbs-o-down"></i>(20)
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <a href="" class=" HnHoiDapAllRep">
+                                                    Hiển Thị thêm
+                                                </a>
+                                                <div class="HnHoiDapAllSend">
+                                                    <div class="HnHoiDapAllSendInput">
+                                                        <input type="text" placeholder="Câu hỏi của bạn lien quan đến sản phẩm này..." value="">
+                                                    </div>
+                                                    <input type="file" style="margin-left: 10px;">
+                                                    <button>Trả Lời</button>
+                                                </div>
+                                            </div>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="HnHoiDapPhanTrang HnHoiDapAllRep">
+                            <li>
+                                <a href="#"> <i class="fa fa-backward"></i> </a>
+                            </li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a class="activePhanTrang" href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li>
+                                <a href="#"><i class="fa fa-forward"></i></a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="item10">
+
+        </section>
+    </main>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="jquery.exzoom.js"></script>
+<script src="./ImgZoom.js"></script>
+<script src="./ViewImage.js"></script>
+<script src="./CommentBox.js"></script>
+<script>
+    function NumberUp() {
+        var a = document.getElementById("NumberOrder").value;
+        var b = parseInt(a);
+        if (b === 100) {
+            document.getElementById("NumberOrder").value = 100;
+        } else {
+            document.getElementById("NumberOrder").value = parseInt(a) + 1;
+        }
+    }
+
+    function NumberDown() {
+        var a = document.getElementById("NumberOrder").value;
+        var b = parseInt(a);
+        if (b === 0) {
+            document.getElementById("NumberOrder").value = 0;
+        } else {
+            document.getElementById("NumberOrder").value = parseInt(a) - 1;
+        }
+    }
+
+    function MoneyTotal(a, c, b) {
+        const formatter = new Intl.NumberFormat('vi-VN', {})
+        var trave = document.getElementById(a).checked
+        var TienHienCo = document.getElementById("TongThanhToanSanPhamXemThem").innerHTML;
+        TienHienCo = TienHienCo.split('.').join('');
+        if (trave == true) {
+            document.getElementById(c).style.background = "chartreuse";
+            var tongtienthanhToan = parseInt(TienHienCo) + parseInt(b);
+            document.getElementById("TongThanhToanSanPhamXemThem").innerHTML = formatter.format(tongtienthanhToan);
+
+        } else {
+            document.getElementById(c).style.background = "Red";
+            var tongtienthanhToan = parseInt(TienHienCo) - parseInt(b);
+            if (tongtienthanhToan < 0) {
+                document.getElementById("TongThanhToanSanPhamXemThem").innerHTML = 0;
+            } else {
+                document.getElementById("TongThanhToanSanPhamXemThem").innerHTML = formatter.format(tongtienthanhToan);
+            }
+        }
+    }
+</script>
+
+</html>
+
+</html>
+
+</html>
