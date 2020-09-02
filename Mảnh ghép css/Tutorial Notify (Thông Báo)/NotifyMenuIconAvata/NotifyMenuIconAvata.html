@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Mảnh ghép css/Repository/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="./NotifyMenuIconAvata.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class=" notify-row">
+        <ul class="top-menu">
+            <li onclick="hienthi();" class=" dropdown ">
+                <a data-toggle="dropdown " class="dropdown-toggle " href="# ">
+                    <i class="fa fa-envelope-o "></i>
+                    <span class="badge bg-important ">4</span>
+                </a>
+                <ul class="dropdown-menu extended inbox ">
+                    <li>
+                        <p class="red ">You have 4 Mails</p>
+                    </li>
+                    <li>
+                        <a href="# ">
+                            <span class="photo "><img alt="avatar "
+                                    src="/Mảnh ghép css/Repository/IMG/93114864_238532614223784_6538662055426129920_n.jpg "></span>
+                            <span class="subject ">
+                                <span class="from ">Jonathan Smith</span>
+                            <span class="time ">Just now</span>
+                            </span>
+                            <span class="message ">
+                                Hello, this is an example msg.
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="# ">See all messages</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <script>
+        function hienthi() {
+            document.querySelector('.extended').classList.toggle('activer');
+        }
+    </script>
+</body>
+
+</html>

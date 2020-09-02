@@ -1,0 +1,177 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul.top-menu {
+    margin-right: 15px;
+    margin-top: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+#top_menu .top-menu>li,
+ul.top-menu>li {
+    float: left;
+}
+
+.top-menu>li {
+    position: relative;
+    display: block;
+}
+
+ul.top-menu>li>a {
+    color: #fff;
+    font-size: 16px;
+    background: #8b5c7e;
+    padding: 4px 8px;
+    margin-right: 15px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    padding-right: 8px !important;
+}
+
+.top-menu>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+.badge {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    z-index: 100;
+}
+
+.badge {
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: #777;
+    border-radius: 10px;
+}
+
+.dropdown-menu.extended {
+    max-width: 320px !important;
+    min-width: 160px !important;
+    top: 42px;
+    width: 300px !important;
+    padding: 0 10px;
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1) !important;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background: #fff;
+    border: none;
+    left: -10px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+.activer {
+    display: block;
+}
+
+
+/**/
+
+.dropdown-menu.extended {
+    max-width: 320px !important;
+    min-width: 160px !important;
+    top: 42px;
+    width: 300px !important;
+    padding: 0 10px;
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1) !important;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background: #fff;
+    border: none;
+    left: -10px;
+}
+
+.dropdown-menu.extended li p {
+    margin: 0;
+    padding: 10px 0;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+}
+
+.dropdown-menu.extended.inbox li a,
+.dropdown-menu.extended.tasks-bar li a {
+    background: #f1f2f7;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    float: left;
+    width: 100%;
+}
+
+.dropdown-menu.inbox li a .photo img {
+    float: left;
+    height: 40px;
+    margin: 0 10px;
+    width: 40px;
+    border-radius: 100%;
+}
+
+.dropdown-menu.inbox li a .subject {
+    display: block;
+}
+
+.dropdown-menu.inbox li a .subject .from {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.dropdown-menu.inbox li a .subject .time {
+    font-size: 11px;
+    font-style: italic;
+    font-weight: bold;
+    position: absolute;
+    right: 20px;
+}
+
+.dropdown-menu.inbox li a .message {
+    font-size: 11px;
+    display: block !important;
+}
+
+.dropdown-menu.extended.inbox li a,
+.dropdown-menu.extended.tasks-bar li a {
+    margin-bottom: 10px;
+    float: left;
+    width: 98%;
+    background: rgb(241, 242, 247);
+    border-radius: 5px;
+    padding: 10px 1%;
+}

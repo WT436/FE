@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Mảnh ghép css/Repository/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="./NotifyMenuIcon.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="nav notify-row" id="top_menu">
+        <ul class="nav top-menu">
+            <li class="dropdown" onclick="hienthi();">
+                <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                    <i class="fa fa-tasks"></i>
+                    <span class="badge bg-success">8</span>
+                </a>
+                <ul id="lenNaoThanLinh" class="dropdown-menu extended tasks-bar">
+                    <li>
+                        <p class="">You have 8 pending tasks</p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="task-info clearfix">
+                                <div class="desc pull-left">
+                                    <h5>Target Sell</h5>
+                                    <p>33% , Deadline 12 June’13</p>
+                                </div>
+                                <span class="notification-pie-chart pull-right" data-percent="90">
+                                    <span class="percent"></span>
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="external">
+                        <a href="#">See All Tasks</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <script>
+        function hienthi() {
+            document.querySelector('.extended').classList.toggle('activer');
+        }
+    </script>
+</body>
+
+</html>

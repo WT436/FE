@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Mảnh ghép css/Repository/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="./CommonParameterAdmin.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="ContainerAllParameter">
+        <div class="ContainerOneParameter" title="2,133,298,123">
+            <div class="OneParameterIcon">
+                <i class="fa fa-eye"> </i>
+            </div>
+            <div class="OneParameterConten">
+                <h4>Lượt Xem</h4>
+                <h3 id="theodoi1">500</h3>
+                <p>Other hand, we denounce</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function tacDoSuLy(end) {
+            if (end < 100) return 5
+            else if (end < 6000 && end >= 100) return 10
+            else if (end < 60000 && end >= 6000) return 100
+            else if (end < 6000000 && end >= 60000) return 1000
+            else if (end < 60000000 && end >= 6000000) return 10000
+            else if (end < 600000000 && end >= 60000000) return 100000
+            else if (end < 2000000000 && end >= 600000000) return 1000000
+            else return 100000
+        }
+
+        function lamtronKetQua(dauVao) {
+            if (parseInt(dauVao) >= 1000 && parseInt(dauVao) <= 1000000) {
+                return (dauVao / 1000).toFixed(1).replace(".", ",") + "N";
+            } else if (parseInt(dauVao) >= 1000000 && parseInt(dauVao) <= 1000000000) {
+                return (dauVao / 1000000).toFixed(2).replace(".", ",") + "Tr";
+            } else if (parseInt(dauVao) >= 1000000000) {
+                return (dauVao / 1000000000).toFixed(3).replace(".", ",") + "T";
+            } else {
+                return parseInt(dauVao);
+            }
+
+        }
+        document.addEventListener("DOMContentLoaded", () => {
+            function counter(id, start, duration) {
+                let obj = document.getElementById(id),
+                    end = document.getElementById(id).innerHTML.split(",").join("");
+                current = start,
+                    range = end - start,
+                    speed = tacDoSuLy(end),
+                    interment = end > start ? speed : 10,
+                    step = Math.abs(Math.floor(duration / range)),
+                    timer = setInterval(() => {
+                        current += interment;
+                        obj.textContent = lamtronKetQua(current - speed);
+                        if (current > end) {
+                            clearInterval(timer);
+                            obj.textContent = lamtronKetQua(end);
+                        }
+                    }, step);
+            }
+            counter("theodoi1", 0, 25000);
+        });
+    </script>
+</body>
+
+</html>
