@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Mảnh ghép css/Repository/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="./selectBox.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="Search-input">
+        <input type="text" id="Search1" value="" placeholder="Tìm kiếm">
+        <i class="fa fa-chevron-down"></i>
+        <ul class="Data-Search-input" id="data1">
+        </ul>
+    </div>
+    <script>
+        const countries = [{
+            id: 1,
+            name: 'Hà Nội'
+        }, {
+            id: 2,
+            name: 'Hải Phòng'
+        }, {
+            id: 3,
+            name: 'Nam định'
+        }, {
+            id: 4,
+            name: 'Ninh Bình'
+        }, ];
+        const searchInput = document.querySelector('#Search1');
+        const ShowList = document.querySelector('#data1');
+        searchInput.addEventListener('keyup', function() {
+            const input = searchInput.value;
+            ShowList.innerHTML = '';
+            const suggestions = countries.filter(function(country) {
+                return country.name.toLowerCase().startsWith(input.toLowerCase());
+            });
+
+            if (input === '') {
+                countries.forEach(m => {
+                    const div = document.createElement('li');
+                    div.innerHTML = m.name;
+                    div.dataset.id = m.id;
+                    div.addEventListener("click", getName);
+                    ShowList.appendChild(div);
+                });
+            } else {
+                suggestions.forEach(function(suggested) {
+                    const div = document.createElement('li');
+                    div.innerHTML = suggested.name;
+                    div.dataset.id = suggested.id;
+                    div.addEventListener("click", getName);
+                    ShowList.appendChild(div);
+                });
+            }
+        })
+
+        function getName() {
+            searchInput.value = this.innerHTML;
+        }
+    </script>
+</body>
+
+</html>

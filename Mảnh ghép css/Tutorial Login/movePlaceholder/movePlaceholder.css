@@ -1,0 +1,132 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    padding: 40px;
+    box-sizing: border-box;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .5);
+}
+
+.wrapper h2 {
+    color: #666;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.login {
+    float: left;
+    margin: 2%;
+    width: 46%;
+}
+
+.input-Dad {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input-Dad input {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #666;
+    font-size: 16px;
+    color: #666;
+    font-weight: 700;
+}
+
+.box {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.box input[type="checkbox"] {
+    display: none;
+}
+
+.box label {
+    position: relative;
+    display: inline-block;
+    color: black;
+    font-size: 14px;
+    width: 45%;
+    cursor: pointer;
+}
+
+.box label span {
+    position: relative;
+    top: 3px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid black;
+}
+
+.box input[type="checkbox"]:checked+span::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    bottom: 3px;
+    right: 3px;
+    background: black;
+    animation: nam 2s linear infinite;
+}
+
+@keyframes nam {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: white;
+}
+
+button i {
+    float: left;
+    font-size: 20px;
+    width: 10%;
+    height: 100%;
+}
+
+.quenMatKhau {
+    width: 45%;
+    float: right;
+}
+
+.quenMatKhau>a {
+    float: right;
+    font-size: 10px;
+    text-decoration: none;
+    color: #150799;
+}
+
+.speed button {
+    text-align: left;
+}

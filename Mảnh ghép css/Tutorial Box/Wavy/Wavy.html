@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Wavy.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="WavyBox">
+        <div class="Wavy">
+            <div class="WavyContent">
+                <h2>Đánh Giá</h2>
+                <p>
+                    Add thoong tin vaof ddaay
+                </p>
+            </div>
+        </div>
+        <div class="Wavy">
+            <div class="WavyContent">
+                <h2>Đánh Giá</h2>
+                <p>
+                    Add thoong tin vaof ddaay
+                </p>
+            </div>
+        </div>
+        <div class="Wavy">
+            <div class="WavyContent">
+                <h2>Đánh Giá</h2>
+                <p>
+                    Add thoong tin vaof ddaay
+                </p>
+            </div>
+        </div>
+        <div class="Wavy">
+            <div class="WavyContent">
+                <h2>Đánh Giá</h2>
+                <p>
+                    Add thoong tin vaof ddaay
+                </p>
+            </div>
+        </div>
+    </div>
+    <svg>
+        <filter id="BoderWavy">
+            <feTurbulence x="0" y="0" baseFrequency="0.02" numOctaves="5" seed="30">
+                <animate attributeName="baseFrequency" dur="60s" values="0.02;0.05;0.02" repeatCount="indefinite">
+                </animate>
+            </feTurbulence>
+
+            <feDisplacementMap in="SourceGraphic" scale="30"></feDisplacementMap>
+        </filter>
+    </svg>
+</body>
+
+</html>

@@ -4,7 +4,7 @@ body {
     font-family: sans-serif;
 }
 
-a {
+button {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -20,8 +20,8 @@ a {
     overflow: hidden;
 }
 
-a::before,
-a::after,
+button::before,
+button::after,
 span::before,
 span::after {
     content: '';
@@ -33,12 +33,12 @@ span::after {
     transition: 0.5s;
 }
 
-a::before {
+button::before {
     top: 0;
     left: -26%;
 }
 
-a::after {
+button::after {
     top: 0;
     right: -26%;
 }
@@ -53,26 +53,26 @@ span::after {
     left: 50%;
 }
 
-a:hover::before {
+button:hover::before {
     top: 0;
     left: 0;
 }
 
-a:hover::after {
+button:hover::after {
     top: 0;
     right: 0;
 }
 
-a:hover span::before {
+button:hover span::before {
     bottom: -0%;
     left: 25%;
 }
 
-a:hover span::after {
+button:hover span::after {
     top: -0%;
     left: 50%;
 }
 
-a:hover {
+button:hover {
     color: aliceblue;
 }

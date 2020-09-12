@@ -1,0 +1,64 @@
+.WavyBox {
+    width: 100%;
+    height: 20em;
+    position: relative;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.Wavy {
+    width: 250px;
+    height: 100%;
+    position: relative;
+    margin: 10px 20px;
+    float: left;
+    color: black;
+    display: flex;
+}
+
+.Wavy:hover {
+    color: black;
+}
+
+.WavyContent {
+    position: absolute;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.Wavy::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 4px solid #150799;
+    background: rgba(0, 250, 208, 0.178);
+    filter: url("#BoderWavy");
+}
+
+.Wavy::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    border: 4px solid red;
+    background: rgba(0, 250, 208, 0.178);
+    border-right: 0;
+    filter: url("#BoderWavy");
+}
+
+.Wavy:hover::before {
+    background: rgb(17, 174, 247);
+    transition: 0.5s;
+}
+
+.WavyContent h2 {
+    width: 100%;
+    font-size: 30px;
+    margin: 0;
+    padding: 10px 10%;
+}

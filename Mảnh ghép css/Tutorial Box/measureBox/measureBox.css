@@ -1,0 +1,184 @@
+.measureBox {
+    width: 96%;
+    height: auto;
+    margin: 10px 2%;
+    position: relative;
+    border: 1px solid blueviolet;
+}
+
+.measureBox-Main {
+    width: 98%;
+    background-color: rgba(95, 158, 160, 0.658);
+    padding: 10px 1%;
+}
+
+.measureBox-content {
+    width: 98%;
+    padding: 10px 1%;
+}
+
+
+/**/
+
+.measureBox-Map1 {
+    width: 100%;
+    height: auto;
+    margin: 10px;
+}
+
+.circle {
+    position: relative;
+    left: 40%;
+    transform: translate(10%, 0%);
+    width: 200px;
+    height: 200px;
+    background: #ccc;
+    border: 5px solid #fff;
+    box-shadow: 0 0 0 5px rgb(120, 230, 57);
+    border-radius: 50%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.nam {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #15a0f1;
+    border-radius: 100%;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
+}
+
+.nam::before,
+.nam::after {
+    content: "";
+    position: absolute;
+    width: var(--i);
+    height: var(--i);
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    background: #000;
+}
+
+.nam::before {
+    border-radius: 45%;
+    background: rgba(255, 255, 255, 1);
+    animation: ani 4s linear infinite;
+}
+
+.nam::after {
+    border-radius: 40%;
+    background: rgba(255, 255, 255, 0.5);
+    animation: ani 6s linear infinite;
+}
+
+@keyframes ani {
+    0% {
+        transform: translate(-50%, -75%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -75%) rotate(360deg);
+    }
+}
+
+.thongSo {
+    width: 100%;
+    height: auto;
+    font-weight: 600;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+
+/**/
+
+.measureBox-Map2 {
+    width: 100%;
+}
+
+.star-progress-bar {
+    width: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    align-self: stretch;
+    margin: 6px 0px;
+}
+
+.star-progress-bar .star-number {
+    width: 10%;
+    display: flex;
+    font-weight: 600;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    font-size: 16px;
+    font-family: monospace;
+}
+
+.star-progress-bar p {
+    width: 50px;
+    color: rgb(51, 51, 51);
+    font-size: 15px;
+    margin: 0px;
+}
+
+.star-progress-bar .star-number span {
+    display: block;
+}
+
+.star-progress-bar .star-number i {
+    display: block;
+    margin-left: 3px;
+}
+
+.star-progress-bar .progress-bar {
+    position: relative;
+    width: 50%;
+    margin: 0 5%;
+    height: 13px;
+    background-color: rgb(239, 239, 239);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.star-progress-bar .percent {
+    font-size: 14px;
+    font-weight: 300;
+    text-align: right;
+}
+
+.progress-1 {
+    height: 100%;
+    border-radius: 10px;
+    background: linear-gradient(to right, #008aff, #00ffe7);
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+    0%,
+    100% {
+        filter: hue-rotate(0deg);
+    }
+    50% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.oneStar {
+    margin-right: 0px;
+    position: relative;
+    display: inline-block;
+    margin-right: 0.1em;
+    color: rgb(184, 184, 184);
+}
+
+.oneStar i:last-child {
+    position: absolute;
+    top: 3px;
+    left: 0px;
+    color: rgb(255, 193, 32);
+    overflow: hidden;
+}

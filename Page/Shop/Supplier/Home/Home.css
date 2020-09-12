@@ -1,0 +1,83 @@
+        .InfoCreateProduct {
+            width: 100%;
+            margin-top: 100px;
+        }
+        
+        .input-Box {
+            position: relative;
+            width: 100%;
+            padding: 10px;
+            margin: 15px;
+        }
+        
+        .input-Box span {
+            position: absolute;
+            width: 100%;
+            top: -10px;
+            font-family: monospace;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        
+        .input-Box span b {
+            color: red;
+        }
+        
+        .info-input-Box {
+            position: absolute;
+            width: 30%;
+            height: auto;
+            top: -18px;
+            left: 165px;
+            padding: 10px;
+            font-family: monospace;
+            font-weight: 500;
+            background-color: white;
+            border-radius: 10px;
+            border: 1px solid black;
+            display: block;
+            box-shadow: 0 0 10px rgb(126, 125, 125);
+            transform: perspective(500px) scale(0);
+            transition: 0.5s;
+        }
+        
+        .info-input-Box::after {
+            content: " ";
+            position: absolute;
+            top: 10px;
+            left: -30px;
+            border-width: 15px;
+            border-style: solid;
+            border-color: transparent transparent transparent #16079981;
+            transform: rotate(180deg);
+        }
+        
+        .input-Box span i {
+            color: blue;
+        }
+        
+        .input-Box>span>i:hover~.info-input-Box {
+            transform: perspective(500px) scale(1);
+        }
+        
+        .div-input {
+            width: 100%;
+        }
+        
+        .input-Box input {
+            width: 50%;
+            height: 30px;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 0 10px;
+            font-size: 16px;
+            font-family: sans-serif;
+            font-weight: 500;
+            outline: none;
+            box-shadow: 0 0 10px rgb(126, 125, 125);
+        }
+        
+        .div-input i {
+            padding: 10px;
+            color: chartreuse;
+        }

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="/Mảnh ghép css/Repository/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="./ckeditorstandard/ckeditor.js"></script>
+    <link rel="stylesheet" href="./ckeditorstandard.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="TexEditorContainer">
+        <div class="buttonCktor">
+            <a href="#" id="ViewDataBtn">Xem</a>
+            <a href="#">Lưu</a>
+            <a href="#" id="ClearBoxData">Làm Sạch</a>
+        </div>
+        <textarea id="editor"></textarea>
+        <div class="ViewData">
+            <div class="DataContent">
+            </div>
+            <span class="Closer">
+                <i class="fa fa-times-circle-o"></i>
+            </span>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            CKEDITOR.replace('editor', {
+                height: 400,
+                width: 100 + "%",
+                filebrowserUploadUrl: '/Admin/UpLoadCKEditorSingGer'
+            });
+            CKEDITOR.on('instanceCreated', function(e) {
+                e.editor.addCss('body{color:red;}');
+            });
+        });
+        $("#ViewDataBtn").click(() => {
+            var a = CKEDITOR.instances['editor'].getData();
+            $(".DataContent").html(a);
+            $(".ViewData").addClass("active");
+        });
+        $(".Closer").click(() => {
+            $(".ViewData").removeClass("active");
+        });
+        $("#ClearBoxData").click(() => {
+            CKEDITOR.instances['editor'].setData('');
+        });
+    </script>
+</body>
+
+</html>
