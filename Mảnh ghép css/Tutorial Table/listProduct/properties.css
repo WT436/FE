@@ -1,0 +1,123 @@
+.ThuocTinhContainer {
+    width: 95%;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    position: relative;
+    padding: 5px 2%;
+    overflow-x: scroll;
+}
+
+.ThuocTinhContainer h3 {
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+.ThuocTinhContainer h3 span {
+    color: red;
+    font-size: 20px;
+}
+
+.ThuocTinhTitle {
+    width: 100%;
+    height: auto;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.ThuocTinhContainer h4 {
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+.ThuocTinhContainer h4 span {
+    color: red;
+    font-size: 20px;
+}
+
+.ThuocTinhSelect {
+    font-size: 13px;
+    font-family: monospace;
+}
+
+.ThanhToanThuocTinh {
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.ThanhToanThuocTinh>table>tbody>tr>th {
+    margin: 10px !important;
+    padding: 10px;
+    background: #ccc;
+    border-radius: 5px;
+}
+
+.thuocTinhActive {
+    border-top: 1px solid black;
+    text-align: center;
+    padding-top: 10px;
+    width: 100%;
+    transition: 1s;
+}
+
+.thuocTinhActive input {
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: monospace;
+}
+
+.thuocTinhActive input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+}
+
+.ThanhToanThuocTinh input[type="number"] {
+    width: 100px;
+    height: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+    background: #ccc;
+    font-size: 15px;
+}
+
+.thuocTinhActive input[type="file"] {
+    width: 150px;
+    height: 25px;
+    border: 1px solid black;
+}
+
+.thuocTinhActive button {
+    background: rgb(9, 255, 0);
+    color: black;
+    width: 50px;
+    height: 40px;
+    line-height: 10px;
+    padding: 10px 10px;
+    border-radius: 4px;
+    border: 1px solid black;
+    outline: none;
+}
+
+.thuocTinhActive td {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-radius: 5px;
+}
+
+.thuocTinhActive td img {
+    width: 150px;
+}
