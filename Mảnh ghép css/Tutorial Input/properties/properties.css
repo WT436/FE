@@ -1,4 +1,4 @@
-.ThuocTinhContainer {
+.ThuocTinhSelectContainer {
     width: 90%;
     height: auto;
     border: 1px solid black;
@@ -10,11 +10,11 @@
     scrollbar-width: none;
 }
 
-.ThuocTinhContainer::-webkit-scrollbar {
+.ThuocTinhSelectContainer::-webkit-scrollbar {
     display: none;
 }
 
-.ThuocTinhContainer h3 {
+.ThuocTinhSelectContainer h3 {
     font-size: 16px;
     font-family: sans-serif;
     font-weight: bold;
@@ -22,19 +22,19 @@
     margin: 0;
 }
 
-.ThuocTinhContainer h3 span {
+.ThuocTinhSelectContainer h3 span {
     color: red;
     font-size: 20px;
 }
 
-.ThuocTinhTitle {
+.ThuocTinhSelectTitle {
     width: 100%;
     height: auto;
     font-size: 12px;
     padding: 10px;
 }
 
-.ThuocTinhContainer h4 {
+.ThuocTinhSelectContainer h4 {
     font-size: 14px;
     font-family: sans-serif;
     font-weight: bold;
@@ -42,29 +42,29 @@
     margin: 0;
 }
 
-.ThuocTinhContainer h4 span {
+.ThuocTinhSelectContainer h4 span {
     color: red;
     font-size: 20px;
 }
 
-.ThuocTinhSelect {
+.ThuocTinhSelectSelect {
     font-size: 13px;
     font-family: monospace;
 }
 
-.ThanhToanThuocTinh {
+.ThanhToanThuocTinhSelect {
     width: 100%;
     margin: 20px 0;
 }
 
-.ThanhToanThuocTinh>table>tbody>tr>th {
+.ThanhToanThuocTinhSelect>table>tbody>tr>th {
     margin: 10px !important;
     padding: 10px;
     background: #ccc;
     border-radius: 5px;
 }
 
-.MainThuocTinh {
+.MainThuocTinhSelect {
     width: auto;
     height: 10px;
     text-align: center;
@@ -73,12 +73,12 @@
     border-radius: 5px;
 }
 
-.thuocTinhActive {
+.ThuocTinhSelectActive {
     width: 100%;
     transition: 1s;
 }
 
-.thuocTinhActive input {
+.ThuocTinhSelectActive input {
     width: 200px;
     height: 30px;
     padding: 5px;
@@ -89,7 +89,7 @@
     font-family: monospace;
 }
 
-.thuocTinhActive button {
+.ThuocTinhSelectActive button {
     background: rgb(9, 255, 0);
     color: black;
     width: 100%;

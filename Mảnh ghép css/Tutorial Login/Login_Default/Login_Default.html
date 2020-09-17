@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Mảnh ghép css/Repository/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./Login_Default.css">
+    <title>Document</title>
+</head>
+
+<body onload="myFunction()">
+    <div class="Login_Default_Container">
+        <a href="#"><i class="fa fa-times-circle-o"></i></a>
+        <form action="">
+            <img src="" alt="">
+            <p>Trần Hải Nam</p>
+            <input type="password" placeholder="Mật khẩu vào trang">
+            <div>
+                <a href="#">Đăng ký</a>
+                <a href="#">Quên Mật Khẩu ?</a>
+            </div>
+            <button>Đăng Nhập</button>
+        </form>
+    </div>
+    <div id="Snack">Đăng Nhập Vào Trang</div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("Snack");
+            x.className = "show";
+            setTimeout(function() {
+                x.className = x.className.replace("show", "");
+            }, 5000);
+        };
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+/**/
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 180px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid blue;
+    color: rgb(2, 2, 2);
+    text-align: center;
+    margin-left: 27px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+}
+
+
+/**/
+
+main {
+    margin: 10px 5%;
+}
+
+.AdminPageObserver {
+    width: 50px;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    margin-top: 15vh;
+    margin-left: -45px;
+    transition: 0.5s;
+}
+
+.AdminPageObserver:hover {
+    margin-left: 0;
+}
+
+.AdminPageObserver>ul {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.AdminPageObserver>ul::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 15px;
+    border-style: solid;
+    border-color: transparent transparent transparent #150799;
+}
+
+.AdminPageObserver>ul>li {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border-right: 3px solid #150799;
+}
+
+.AdminPageObserver>ul>li>a {
+    font-size: 20px;
+    padding: 15px;
+}
+
+.AdminPageObserver>li>a>i {
+    font-size: 30px;
+}
+
+.AdminPageObserver>ul>li:hover {
+    background: rgb(139, 243, 54);
+}

@@ -62,3 +62,15 @@
     margin: 0;
     padding: 10px 10%;
 }
+
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td,
+#customers th {
+    border: none;
+    padding: 8px;
+}
